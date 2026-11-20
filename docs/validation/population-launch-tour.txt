@@ -1,0 +1,7 @@
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M3
+
+WORLD LIFE · 468 extra trees · 3024 rice clumps · 13 stalls · 30 friendly NPCs
+CAPTURE · 01-menu · FPS 1 · Draws 2349
+CAPTURE · 02-prologue · FPS 16 · Draws 3084
+CAPTURE · 03-village · FPS 60 · Draws 1528

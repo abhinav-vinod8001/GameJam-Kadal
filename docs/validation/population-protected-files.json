@@ -1,0 +1,19 @@
+{
+  "scope": "Forest, farming, market, and ambient villagers; 21 November 2026",
+  "algorithm": "SHA-256",
+  "unchanged_files": {
+    "scripts/player/player.gd": "392f22dc9db77608e53b62d0568228f5d3e07b848956633df9fb6687e5a6bed3",
+    "scripts/player/avatar.gd": "0be03889f273502ffe9d18dafe01fd995ee64918c626b460684364c5b87f2ba5",
+    "scripts/player/avatar_art.gd": "880e41752e53a0e8385e3565b470a9d415e9e36d211850f3f73d017cab2b29bb",
+    "scripts/combat/combat.gd": "1443de66ec6ab7188ef078cac44a6747c465ba70157fc47e10909b56162d3703",
+    "scripts/combat/effects.gd": "fdf7f2f1193d350cbb8158cb9144fb7cce561c7f0f000a71c3e7649eab56f818",
+    "scripts/enemies/enemy.gd": "83c6ebe2a34af2d2f125e0a8584d0f3d5c3e26c2a4aa3d026f2cf7adaa46723e",
+    "scripts/ui/interface.gd": "5ccd937259f2b84f050ce48a7638e854fb206367c67f599084f1cce85206d60f",
+    "scripts/ui/cartography.gd": "9808cc77a49ad346f77b151544ba14d214f6e1d282e21aed1b7352dab552ec99",
+    "scripts/managers/game.gd": "8f7419f2461be0b2b5fe9e69d1801f2ec6605cd9fe4518dedb864cdb6cdc2b7b",
+    "scripts/main.gd": "532ff996b190a4f6184aaa2f3df96199e68f368a10c45602cc00695def4be1bb",
+    "scripts/vehicles/boat.gd": "a040a310795494e45f5d2c883ad65e0476a948779a6ca8deb2eda5da9c13d7aa",
+    "data/weapons.json": "b3a372f78c302e5aaf2e30d03b871e1d2d5fb57feb6c39adb80796be728a9941",
+    "data/dialogues.json": "80f20634730ab1a744b9cd1f5f519667ac865adf83e1851e87985a6e59b1121f"
+  }
+}

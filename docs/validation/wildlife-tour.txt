@@ -1,0 +1,19 @@
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M3
+
+HILL TEMPLE · two roof tiers · carved veranda · courtyard · walkable gateway
+WORLD LIFE · 468 extra trees · 3024 rice clumps · 13 stalls · 30 friendly NPCs
+WILDLIFE · 4 cats · 3 dogs · 5 deer · 2 elephants
+CAPTURE · 32-village-cat · FPS 60 · Draws 485
+CAPTURE · 33-village-dog · FPS 48 · Draws 395
+CAPTURE · 34-forest-deer · FPS 48 · Draws 981
+CAPTURE · 35-forest-elephant · FPS 30 · Draws 191
+CAPTURE · 36-hill-temple · FPS 30 · Draws 425
+CAPTURE · 37-temple-courtyard · FPS 40 · Draws 262
+CAPTURE · 38-temple-approach · FPS 45 · Draws 440
+CAPTURE · 39-temple-monsoon · FPS 45 · Draws 452
+WILDLIFE SAMPLE · village · 59 FPS · 3264 draws
+WILDLIFE SAMPLE · deer clearing · 60 FPS · 1187 draws
+WILDLIFE SAMPLE · elephant clearing · 60 FPS · 626 draws
+WILDLIFE SAMPLE · hill temple · 60 FPS · 443 draws
+WILDLIFE TOUR COMPLETE

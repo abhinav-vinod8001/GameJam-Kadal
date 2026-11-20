@@ -1,0 +1,15 @@
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M3
+
+CAPTURE · 01-menu · FPS 1 · Draws 1439
+CAPTURE · 02-prologue · FPS 44 · Draws 1827
+CAPTURE · 03-village · FPS 120 · Draws 1771
+CAPTURE · 03b-terrain · FPS 103 · Draws 1770
+CAPTURE · 04-dialogue · FPS 103 · Draws 1772
+CAPTURE · 05-shop · FPS 92 · Draws 1772
+CAPTURE · 06-map · FPS 92 · Draws 1829
+CAPTURE · 08-spear · FPS 100 · Draws 703
+CAPTURE · 09-monsoon · FPS 121 · Draws 673
+CAPTURE · 10-settings · FPS 105 · Draws 698
+CAPTURE · 11-highland · FPS 103 · Draws 1782
+CAPTURE · TOUR COMPLETE

@@ -1,0 +1,7 @@
+[
+ {"name":"Val & Paricha","type":"Sword & shield","damage":22,"reach":2.8,"duration":0.62,"windup":0.20,"cost":13,"arc":1.65,"color":"e9e0bb","sound":"sword","description":"Balanced three-cut combinations. A fresh block opens a perfect-parry window."},
+ {"name":"Kuntham","type":"Spear","damage":31,"reach":4.6,"duration":0.82,"windup":0.29,"cost":19,"arc":0.65,"color":"bedee1","sound":"spear","description":"A precise thrust with exceptional reach. Aim carefully; its striking cone is narrow."},
+ {"name":"Kettukari","type":"Wooden staff","damage":17,"reach":3.5,"duration":0.64,"windup":0.24,"cost":12,"arc":2.5,"color":"d9b978","sound":"staff","description":"Broad, flowing sweeps. Heavy blows break an elite guard's defence."},
+ {"name":"Kattaram","type":"Dagger","damage":14,"reach":2.1,"duration":0.36,"windup":0.11,"cost":8,"arc":1.35,"color":"e5edda","sound":"dagger","description":"Quick cuts and short recoveries. Close the distance before committing."},
+ {"name":"Urumi","type":"Flexible sword","damage":20,"reach":4.1,"duration":0.95,"windup":0.35,"cost":23,"arc":3.14,"color":"e4cc97","sound":"urumi","description":"A wide ribbon of steel. Powerful crowd control with a deliberate recovery."}
+]

@@ -1,0 +1,65 @@
+{
+  "comparison": "Distribution snapshot captured before rebuilding this reference release",
+  "runtime_changes": [
+    {
+      "path": "scripts/npcs/npc.gd",
+      "status": "modified",
+      "sha256": "b042ca9eb9b2df5ce49900ae480e84b240ed282d4e69de6b5fb2af57072a93b1"
+    },
+    {
+      "path": "scripts/player/avatar.gd",
+      "status": "modified",
+      "sha256": "ba6ca11705703f4a281ba239ab2998ce0752c15a46c2ecb9c68f39bdcf4e43b4"
+    },
+    {
+      "path": "scripts/player/avatar_art.gd",
+      "status": "modified",
+      "sha256": "55177d5741115b815a63c2c9342b2b6b3ff08811867cc29816133a1773a312e9"
+    },
+    {
+      "path": "scripts/weather/weather.gd",
+      "status": "modified",
+      "sha256": "3d68bb9a5a3691ae14d605986d75b47e837187686876cb090adb74e7d84577f5"
+    },
+    {
+      "path": "scripts/world/scenery_art.gd",
+      "status": "modified",
+      "sha256": "63fa46e228609fd54be09ba1df45afdc356bddf99fc1fe1d3149a7cac9de1fde"
+    },
+    {
+      "path": "scripts/world/world.gd",
+      "status": "modified",
+      "sha256": "e6f68c5ca6bcca539c8409bc21ebf1755c8b07370754f52820c95737c3fc6c37"
+    },
+    {
+      "path": "shaders/coastal_sky.gdshader",
+      "status": "modified",
+      "sha256": "2f9df67baacbc08ec086297c54c4d0bc81db44e2523db97410d44bc77c462a4c"
+    },
+    {
+      "path": "shaders/earthen_trail.gdshader",
+      "status": "added",
+      "sha256": "2b81c95e84b586419842ec7d8873d51112f53964d5da0d580ee38b9536f5591d"
+    },
+    {
+      "path": "shaders/inked_character.gdshader",
+      "status": "added",
+      "sha256": "bfd613231f41aee3548d4fc86aa7be7cb39e19a80f8680ebce3ecf6fc1b08129"
+    },
+    {
+      "path": "shaders/leaf_canopy.gdshader",
+      "status": "modified",
+      "sha256": "812eeb7a652382241c4d6d8776060f1e9908ef0c75e05091a0a94478db960dad"
+    },
+    {
+      "path": "shaders/painted_surface.gdshader",
+      "status": "modified",
+      "sha256": "124cea0ffe3513a211f7cc2ccd6e51dd443e64ea618c0036ced0566ab98a91be"
+    },
+    {
+      "path": "shaders/woven_reed.gdshader",
+      "status": "added",
+      "sha256": "25b7c6bd05b6250db58039607f296c3c2c01c540d915880e2df028a3424a6ccb"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M3
+
+POSITION · (-30, 0.989271, 37) expected ground 1.01342562628916
+PASS · Player settles on solid island terrain
+PASS · Camera-relative walking moves through world
+PASS · Sprinting is faster and consumes stamina
+PASS · Jump leaves the ground
+PASS · Jump lands back on terrain
+PASS · Dodge starts a roll and defensive window
+PASS · Forest terrain supports the player without respawning
+PASS · Actual physics attack has a damage-free windup
+PASS · Timed active window deals damage during physics update
+PASS · Attack recovery ends cleanly
+PASS · Bridge ramps connect both banks without jumping
+PASS · Water switches to buoyant swimming movement
+PASS · Occupied boat moves on player input
+PASS · Boat releases player at disembark
+PASS · Designated ladder begins climbing
+PASS · Climbing reaches the raised lookout
+PASS · Settings modal opens
+PASS · Inventory renders all weapons
+INTEGRATION RESULT · 18 checks · 0 failures

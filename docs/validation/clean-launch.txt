@@ -1,0 +1,47 @@
+Preparing KADAL for its first launch…
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M3
+
+PASS · Main menu starts with shared world
+PASS · World generated with terrain and populated environment
+PASS · Five data-driven weapon configurations
+PASS · Six bilingual NPC configurations
+PASS · Bundled font contains Malayalam glyphs
+PASS · Free roam does not advance story
+PASS · Third-person camera becomes active
+PASS · Player spawns healthy
+PASS · Story triggers are inactive in free roam
+PASS · Merchant transaction updates inventory and balance
+PASS · Merchant refuses purchases without funds
+PASS · Healing consumes herb and restores health
+PASS · Weapon 1 starts a timed attack
+PASS · Weapon 1 does not damage during windup
+PASS · Weapon 2 starts a timed attack
+PASS · Weapon 2 does not damage during windup
+PASS · Weapon 3 starts a timed attack
+PASS · Weapon 3 does not damage during windup
+PASS · Weapon 4 starts a timed attack
+PASS · Weapon 4 does not damage during windup
+PASS · Weapon 5 starts a timed attack
+PASS · Weapon 5 does not damage during windup
+PASS · All weapon meshes equipped without script errors
+PASS · Hit volume damages a target in reach
+PASS · Swing cannot damage the same target twice
+PASS · Perfect parry staggers attacker
+PASS · Shield block protects health
+PASS · Dodge invulnerability prevents damage
+PASS · Boat boarding connects player and boat
+PASS · Boat disembark restores walking
+PASS · Story starts at the first objective
+PASS · NPC and clue interactions advance investigation
+PASS · Defeating the camp unlocks ledger objective
+PASS · Ledger and return interactions award reward and ending
+PASS · Weather supports heavy monsoon
+PASS · Returning to menu restores menu camera
+PASS · Clearing camp before investigation cannot soft-lock the story
+PASS · Escape cannot dismiss the required respawn choice
+PASS · Respawn restores health and dismisses death screen
+
+KADAL SMOKE RESULT · 39 checks · 0 failures

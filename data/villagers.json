@@ -1,0 +1,621 @@
+[
+  {
+    "id": "life_leela",
+    "costume": "meera",
+    "tint": "c28a48",
+    "activity": "vendor",
+    "position": [
+      -35.18,
+      15.5
+    ],
+    "yaw": -1.5707963267948966,
+    "scale": 0.95,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Leela",
+      "role": "Fruit seller",
+      "ml": "കൃഷിയിടത്തിൽ നിന്നുള്ള പഴങ്ങളാണ്. ഒന്നു നോക്കൂ.",
+      "en": "Fresh fruit from the orchards. Take a look.",
+      "more_ml": "പഴുത്ത പഴങ്ങൾക്ക് നല്ല മധുരമാണ്.",
+      "more_en": "The ripe fruit is especially sweet."
+    }
+  },
+  {
+    "id": "life_madhavan",
+    "costume": "smith",
+    "tint": "8f735c",
+    "activity": "vendor",
+    "position": [
+      -35.18,
+      24.0
+    ],
+    "yaw": -1.5707963267948966,
+    "scale": 0.985,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Madhavan",
+      "role": "Potter",
+      "ml": "ഇവിടെ നല്ല മൺപാത്രങ്ങളുണ്ട്. ഒന്നു നോക്കൂ.",
+      "en": "Good clay pots here. Take a look.",
+      "more_ml": "കുടത്തിൽ വെള്ളം നല്ല തണുപ്പായിരിക്കും.",
+      "more_en": "Water stays cool in an earthen pot."
+    }
+  },
+  {
+    "id": "life_safiya",
+    "costume": "fish",
+    "tint": "896b8f",
+    "activity": "vendor",
+    "position": [
+      -28.0,
+      3.8200000000000003
+    ],
+    "yaw": 3.141592653589793,
+    "scale": 1.02,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Safiya",
+      "role": "Cotton trader",
+      "ml": "നല്ല പരുത്തിത്തുണിയുണ്ട്. ഏതു നിറമാണ് ഇഷ്ടം?",
+      "en": "Fine cotton cloth. Which color do you like?",
+      "more_ml": "മഴയിൽ നനയാതെ സൂക്ഷിക്കണം.",
+      "more_en": "Keep it dry when the rain arrives."
+    }
+  },
+  {
+    "id": "life_hameed",
+    "costume": "ravi",
+    "tint": "8b946b",
+    "activity": "vendor",
+    "position": [
+      -10.0,
+      1.82
+    ],
+    "yaw": 3.141592653589793,
+    "scale": 0.95,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Hameed",
+      "role": "Fish merchant",
+      "ml": "ഇന്നത്തെ മീനാണ്. കടവിൽ നിന്നു കൊണ്ടുവന്നതാണ്.",
+      "en": "Today's catch, brought straight from the jetty.",
+      "more_ml": "വഞ്ചികൾ ഉടനെ മടങ്ങിവരും.",
+      "more_en": "The boats should return soon."
+    }
+  },
+  {
+    "id": "life_janaki",
+    "costume": "amma",
+    "tint": "a68b53",
+    "activity": "vendor",
+    "position": [
+      -0.8200000000000001,
+      9.0
+    ],
+    "yaw": 1.5707963267948966,
+    "scale": 0.985,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Janaki",
+      "role": "Rice merchant",
+      "ml": "ഇത്തവണ നല്ല വിളവാണ് പ്രതീക്ഷിക്കുന്നത്.",
+      "en": "We are hoping for a good harvest this season.",
+      "more_ml": "നെല്ല് ഉണങ്ങാൻ വെയിൽ വേണം.",
+      "more_en": "We need sunshine to dry the rice."
+    }
+  },
+  {
+    "id": "life_mani",
+    "costume": "smith",
+    "tint": "63826b",
+    "activity": "vendor",
+    "position": [
+      5.18,
+      18.0
+    ],
+    "yaw": 1.5707963267948966,
+    "scale": 1.02,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Mani",
+      "role": "Vegetable seller",
+      "ml": "കൃഷിയിടത്തിൽ നിന്നുള്ള പച്ചക്കറികളാണ്. ഒന്നു നോക്കൂ.",
+      "en": "Fresh vegetables from the fields. Take a look.",
+      "more_ml": "മഴ വരുന്നതിനു മുമ്പ് വീട്ടിലെത്തണം.",
+      "more_en": "We should get home before the rain."
+    }
+  },
+  {
+    "id": "life_radha",
+    "costume": "meera",
+    "tint": "b76b56",
+    "activity": "vendor",
+    "position": [
+      -9.0,
+      26.68
+    ],
+    "yaw": 0,
+    "scale": 0.95,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Radha",
+      "role": "Flower seller",
+      "ml": "പുതിയ പൂക്കളാണ്. മാല കെട്ടാൻ എടുക്കാം.",
+      "en": "Fresh flowers, ready to thread into garlands.",
+      "more_ml": "നല്ല സുഗന്ധമുണ്ട്.",
+      "more_en": "They have a lovely fragrance."
+    }
+  },
+  {
+    "id": "life_soman",
+    "costume": "ravi",
+    "tint": "997652",
+    "activity": "vendor",
+    "position": [
+      -1.0,
+      26.68
+    ],
+    "yaw": 0,
+    "scale": 0.985,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Soman",
+      "role": "Coconut seller",
+      "ml": "നല്ല ഇളനീരുണ്ട്. ഒന്നു കുടിച്ചു നോക്കൂ.",
+      "en": "Fresh tender coconuts. Stop for a drink.",
+      "more_ml": "ഈ തെങ്ങുകളിൽ നിന്നുള്ളതാണ്.",
+      "more_en": "They came from these coconut palms."
+    }
+  },
+  {
+    "id": "life_balan",
+    "costume": "ravi",
+    "tint": "9c8758",
+    "activity": "farm",
+    "position": [
+      57,
+      45
+    ],
+    "yaw": 0.4,
+    "scale": 1,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Balan",
+      "role": "Paddy farmer",
+      "ml": "നെല്ലിന് നല്ല വെള്ളം കിട്ടി. ഇത്തവണ വിളവ് നന്നായിരിക്കും.",
+      "en": "The rice has enough water. This should be a good harvest.",
+      "more_ml": "വരമ്പിലൂടെ നടക്കൂ. നെൽച്ചെടികൾ ചവിട്ടരുതേ.",
+      "more_en": "Walk along the bunds. Please mind the rice plants."
+    }
+  },
+  {
+    "id": "life_parvathi",
+    "costume": "fish",
+    "tint": "688e73",
+    "activity": "farm",
+    "position": [
+      72,
+      53
+    ],
+    "yaw": -1.1,
+    "scale": 0.94,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Parvathi",
+      "role": "Rice planter",
+      "ml": "നെല്ലിന് നല്ല വെള്ളം കിട്ടി. ഇത്തവണ വിളവ് നന്നായിരിക്കും.",
+      "en": "The rice has enough water. This should be a good harvest.",
+      "more_ml": "വരമ്പിലൂടെ നടക്കൂ. നെൽച്ചെടികൾ ചവിട്ടരുതേ.",
+      "more_en": "Walk along the bunds. Please mind the rice plants."
+    }
+  },
+  {
+    "id": "life_appu",
+    "costume": "smith",
+    "tint": "a17d56",
+    "activity": "farm",
+    "position": [
+      91,
+      43
+    ],
+    "yaw": 0.8,
+    "scale": 1,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Appu",
+      "role": "Field worker",
+      "ml": "നെല്ലിന് നല്ല വെള്ളം കിട്ടി. ഇത്തവണ വിളവ് നന്നായിരിക്കും.",
+      "en": "The rice has enough water. This should be a good harvest.",
+      "more_ml": "വരമ്പിലൂടെ നടക്കൂ. നെൽച്ചെടികൾ ചവിട്ടരുതേ.",
+      "more_en": "Walk along the bunds. Please mind the rice plants."
+    }
+  },
+  {
+    "id": "life_sreedevi",
+    "costume": "meera",
+    "tint": "b58459",
+    "activity": "carry",
+    "position": [
+      66.9,
+      42
+    ],
+    "yaw": 0,
+    "scale": 1,
+    "route": [
+      [
+        66.9,
+        42
+      ],
+      [
+        66.9,
+        56
+      ],
+      [
+        66.9,
+        61
+      ]
+    ],
+    "dock": false,
+    "dialogue": {
+      "name": "Sreedevi",
+      "role": "Harvest carrier",
+      "ml": "നെല്ലിന് നല്ല വെള്ളം കിട്ടി. ഇത്തവണ വിളവ് നന്നായിരിക്കും.",
+      "en": "The rice has enough water. This should be a good harvest.",
+      "more_ml": "വരമ്പിലൂടെ നടക്കൂ. നെൽച്ചെടികൾ ചവിട്ടരുതേ.",
+      "more_en": "Walk along the bunds. Please mind the rice plants."
+    }
+  },
+  {
+    "id": "life_chandran",
+    "costume": "smith",
+    "tint": "7c896d",
+    "activity": "carry",
+    "position": [
+      -31,
+      39
+    ],
+    "yaw": 0,
+    "scale": 1.025,
+    "route": [
+      [
+        -31,
+        39
+      ],
+      [
+        -27,
+        35
+      ],
+      [
+        -24,
+        32
+      ]
+    ],
+    "dock": false,
+    "dialogue": {
+      "name": "Chandran",
+      "role": "Village porter",
+      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
+      "en": "Namaskaram. The market is busy today.",
+      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
+      "more_en": "Take care on the road."
+    }
+  },
+  {
+    "id": "life_nabeesa",
+    "costume": "fish",
+    "tint": "ac705b",
+    "activity": "talk",
+    "position": [
+      -24.5,
+      26
+    ],
+    "yaw": 0,
+    "scale": 0.96,
+    "route": [
+      [
+        -24.5,
+        26
+      ],
+      [
+        -24.5,
+        18
+      ],
+      [
+        -24.5,
+        16
+      ]
+    ],
+    "dock": false,
+    "dialogue": {
+      "name": "Nabeesa",
+      "role": "Market shopper",
+      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
+      "en": "Namaskaram. The market is busy today.",
+      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
+      "more_en": "Take care on the road."
+    }
+  },
+  {
+    "id": "life_krishnan",
+    "costume": "guru",
+    "tint": "a0844a",
+    "activity": "carry",
+    "position": [
+      -15,
+      31
+    ],
+    "yaw": 0,
+    "scale": 0.98,
+    "route": [
+      [
+        -15,
+        31
+      ],
+      [
+        -5,
+        31
+      ],
+      [
+        2,
+        30
+      ]
+    ],
+    "dock": false,
+    "dialogue": {
+      "name": "Krishnan",
+      "role": "Basket seller",
+      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
+      "en": "Namaskaram. The market is busy today.",
+      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
+      "more_en": "Take care on the road."
+    }
+  },
+  {
+    "id": "life_velu",
+    "costume": "ravi",
+    "tint": "71877a",
+    "activity": "fish",
+    "position": [
+      12,
+      32.4
+    ],
+    "yaw": -1.5707963267948966,
+    "scale": 1,
+    "route": [],
+    "dock": true,
+    "dialogue": {
+      "name": "Velu",
+      "role": "Net mender",
+      "ml": "ഇന്നത്തെ മീനാണ്. കടവിൽ നിന്നു കൊണ്ടുവന്നതാണ്.",
+      "en": "Today's catch, brought straight from the jetty.",
+      "more_ml": "വഞ്ചികൾ ഉടനെ മടങ്ങിവരും.",
+      "more_en": "The boats should return soon."
+    }
+  },
+  {
+    "id": "life_joseph",
+    "costume": "smith",
+    "tint": "9e7855",
+    "activity": "fish",
+    "position": [
+      15,
+      35.3
+    ],
+    "yaw": 0.6,
+    "scale": 1,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Joseph",
+      "role": "Fisherman",
+      "ml": "ഇന്നത്തെ മീനാണ്. കടവിൽ നിന്നു കൊണ്ടുവന്നതാണ്.",
+      "en": "Today's catch, brought straight from the jetty.",
+      "more_ml": "വഞ്ചികൾ ഉടനെ മടങ്ങിവരും.",
+      "more_en": "The boats should return soon."
+    }
+  },
+  {
+    "id": "life_lakshmi",
+    "costume": "meera",
+    "tint": "b39d5c",
+    "activity": "talk",
+    "position": [
+      -35.6,
+      39.5
+    ],
+    "yaw": -0.7,
+    "scale": 0.97,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Lakshmi",
+      "role": "Village neighbor",
+      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
+      "en": "Namaskaram. The market is busy today.",
+      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
+      "more_en": "Take care on the road."
+    }
+  },
+  {
+    "id": "life_raman",
+    "costume": "guru",
+    "tint": "a0825e",
+    "activity": "talk",
+    "position": [
+      -34.2,
+      40.5
+    ],
+    "yaw": 2.4,
+    "scale": 1.02,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Raman",
+      "role": "Village elder",
+      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
+      "en": "Namaskaram. The market is busy today.",
+      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
+      "more_en": "Take care on the road."
+    }
+  },
+  {
+    "id": "life_unni",
+    "costume": "smith",
+    "tint": "8e6b4a",
+    "activity": "talk",
+    "position": [
+      -43,
+      -29
+    ],
+    "yaw": 1.1,
+    "scale": 0.94,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Unni",
+      "role": "Kalari student",
+      "ml": "ദിവസവും പരിശീലിക്കണം. ചുവട് ഉറപ്പിക്കണം.",
+      "en": "Practice every day. Keep your footing steady.",
+      "more_ml": "ഗുരുക്കൾ മുറ്റത്തുണ്ട്.",
+      "more_en": "The instructor is in the courtyard."
+    }
+  },
+  {
+    "id": "life_gopi",
+    "costume": "ravi",
+    "tint": "9b824b",
+    "activity": "talk",
+    "position": [
+      -45,
+      -29.6
+    ],
+    "yaw": -1.2,
+    "scale": 0.98,
+    "route": [],
+    "dock": false,
+    "dialogue": {
+      "name": "Gopi",
+      "role": "Kalari student",
+      "ml": "ദിവസവും പരിശീലിക്കണം. ചുവട് ഉറപ്പിക്കണം.",
+      "en": "Practice every day. Keep your footing steady.",
+      "more_ml": "ഗുരുക്കൾ മുറ്റത്തുണ്ട്.",
+      "more_en": "The instructor is in the courtyard."
+    }
+  },
+  {
+    "id": "life_kumaran",
+    "costume": "guru",
+    "tint": "8d9468",
+    "activity": "carry",
+    "position": [
+      -61,
+      -48
+    ],
+    "yaw": 0,
+    "scale": 1,
+    "route": [
+      [
+        -61,
+        -48
+      ],
+      [
+        -63,
+        -52
+      ],
+      [
+        -65,
+        -56
+      ]
+    ],
+    "dock": false,
+    "dialogue": {
+      "name": "Kumaran",
+      "role": "Hill traveler",
+      "ml": "കാട്ടിലൂടെ പോകുമ്പോൾ വഴിയിൽ തന്നെ നടക്കണം.",
+      "en": "Keep to the trail when you walk through the forest.",
+      "more_ml": "മഴ പെയ്താൽ വഴി വഴുക്കും.",
+      "more_en": "The trail gets slippery in the rain."
+    }
+  },
+  {
+    "id": "life_narayanan",
+    "costume": "smith",
+    "tint": "718064",
+    "activity": "carry",
+    "position": [
+      52,
+      -18
+    ],
+    "yaw": 0,
+    "scale": 1.03,
+    "route": [
+      [
+        52,
+        -18
+      ],
+      [
+        54,
+        -21
+      ],
+      [
+        56,
+        -24
+      ]
+    ],
+    "dock": false,
+    "dialogue": {
+      "name": "Narayanan",
+      "role": "Wood gatherer",
+      "ml": "കാട്ടിലൂടെ പോകുമ്പോൾ വഴിയിൽ തന്നെ നടക്കണം.",
+      "en": "Keep to the trail when you walk through the forest.",
+      "more_ml": "മഴ പെയ്താൽ വഴി വഴുക്കും.",
+      "more_en": "The trail gets slippery in the rain."
+    }
+  },
+  {
+    "id": "life_mary",
+    "costume": "amma",
+    "tint": "b19570",
+    "activity": "talk",
+    "position": [
+      -49,
+      44
+    ],
+    "yaw": 0,
+    "scale": 0.96,
+    "route": [
+      [
+        -49,
+        44
+      ],
+      [
+        -53,
+        42
+      ],
+      [
+        -54,
+        37
+      ]
+    ],
+    "dock": false,
+    "dialogue": {
+      "name": "Mary",
+      "role": "Village walker",
+      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
+      "en": "Namaskaram. The market is busy today.",
+      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
+      "more_en": "Take care on the road."
+    }
+  }
+]

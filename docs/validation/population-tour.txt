@@ -1,0 +1,15 @@
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M3
+
+WORLD LIFE · 468 extra trees · 3024 rice clumps · 13 stalls · 30 friendly NPCs
+CAPTURE · 25-lived-in-village · FPS 60 · Draws 1584
+CAPTURE · 26-market-crowd · FPS 47 · Draws 1141
+CAPTURE · 27-rice-fields · FPS 38 · Draws 860
+CAPTURE · 28-paddy-workers · FPS 49 · Draws 1125
+CAPTURE · 29-forest-trail · FPS 50 · Draws 1222
+CAPTURE · 30-village-gathering · FPS 48 · Draws 1734
+CAPTURE · 31-market-stalls · FPS 45 · Draws 912
+POPULATION SAMPLE · market · 60 FPS · 1484 draws
+POPULATION SAMPLE · paddy · 60 FPS · 1247 draws
+POPULATION SAMPLE · forest · 60 FPS · 714 draws
+POPULATION TOUR COMPLETE

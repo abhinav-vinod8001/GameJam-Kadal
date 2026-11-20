@@ -1,0 +1,13 @@
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M3
+
+CAPTURE · 19-water-clear · FPS 60 · Draws 1121
+CAPTURE · 20-vanchi · FPS 44 · Draws 447
+CAPTURE · 21-paddling · FPS 48 · Draws 451
+PADDLE GRIPS · left 0 · right 0.00000426537781
+CAPTURE · 22-water-monsoon · FPS 6 · Draws 1165
+CAPTURE · 24-swimming · FPS 6 · Draws 841
+WATER MOTION SAMPLE · village · 60 FPS · 935 draws
+WATER MOTION SAMPLE · waterfront · 60 FPS · 1535 draws
+WATER MOTION SAMPLE · boat · 59 FPS · 800 draws
+WATER MOTION TOUR COMPLETE

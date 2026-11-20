@@ -1,0 +1,25 @@
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M3
+
+CAPTURE · 01-menu · FPS 1 · Draws 725
+CAPTURE · 02-prologue · FPS 18 · Draws 903
+CAPTURE · 03-village · FPS 60 · Draws 863
+CAPTURE · 03b-terrain · FPS 54 · Draws 862
+CAPTURE · 04-dialogue · FPS 41 · Draws 866
+CAPTURE · 05-shop · FPS 41 · Draws 865
+CAPTURE · 06-map · FPS 46 · Draws 921
+CAPTURE · 08-spear · FPS 55 · Draws 508
+CAPTURE · 09-monsoon · FPS 60 · Draws 481
+CAPTURE · 10-settings · FPS 60 · Draws 506
+CAPTURE · 11-highland · FPS 54 · Draws 831
+CAPTURE · 12-arun · FPS 59 · Draws 288
+CAPTURE · 13-waterfall · FPS 59 · Draws 650
+CAPTURE · 14-reference-arun · FPS 33 · Draws 290
+CAPTURE · 15-reference-kuntham · FPS 33 · Draws 286
+CAPTURE · 16-reference-cottage · FPS 41 · Draws 253
+CAPTURE · 17-reference-market · FPS 45 · Draws 526
+CAPTURE · 18-reference-ruins · FPS 45 · Draws 277
+RENDER SAMPLE · village · 60 FPS · 942 draws
+RENDER SAMPLE · backwater · 60 FPS · 689 draws
+RENDER SAMPLE · forest-rain · 60 FPS · 553 draws
+CAPTURE · TOUR COMPLETE
