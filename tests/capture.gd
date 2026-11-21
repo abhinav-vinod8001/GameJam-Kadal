@@ -7,6 +7,10 @@ func shot(id: String):
 	print("CAPTURE · "+id+" · FPS "+str(Engine.get_frames_per_second())+" · Draws "+str(Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME)))
 
 func _ready():
+	if "--squads" in OS.get_cmdline_user_args():
+		await squad_tour()
+		await finish()
+		return
 	if "--wildlife" in OS.get_cmdline_user_args():
 		await wildlife_tour()
 		await finish()
@@ -316,3 +320,91 @@ func wildlife_tour():
 		await get_tree().create_timer(3.0).timeout
 		print("WILDLIFE SAMPLE · ",site[0]," · ",Engine.get_frames_per_second()," FPS · ",Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME)," draws")
 	print("WILDLIFE TOUR COMPLETE")
+
+func squad_tour():
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("res://artifacts"))
+	Game.set_difficulty(1,false)
+	Game.app.start_game("roam")
+	Game.ui.close_modal()
+	Game.app.weather.manual = true
+	Game.app.weather.set_weather(0)
+	Game.player.set_physics_process(false)
+	Game.player.invulnerable = 100
+	Game.player.hide()
+	# Let newly spawned soldiers settle onto terrain before taking portraits.
+	for i in 30: await get_tree().physics_frame
+	for enemy in Game.world.enemies:
+		enemy.set_physics_process(false)
+		enemy.visual.show()
+	var view = Camera3D.new()
+	get_tree().current_scene.add_child(view)
+	view.fov = 55
+	view.make_current()
+	Game.ui.hud.hide()
+	for site in [["40-level-one-scouts",Vector2(54,-19),Vector3(9,5.5,11)],
+		["41-level-two-patrol",Vector2(61,-39),Vector3(9,5.2,11)],
+		["42-level-three-guard",Vector2(69,-64),Vector3(11,6.5,12)]]:
+		var center = Game.world.ground(site[1].x,site[1].y)
+		Game.player.global_position = center
+		view.position = center+site[2]
+		view.look_at(center+Vector3.UP*1.05)
+		await shot(site[0])
+	if "--squad-portraits" in OS.get_cmdline_user_args():
+		print("SQUAD PORTRAITS COMPLETE")
+		return
+	var focus = Game.world.ground(70,-68.1,.28)
+	Game.player.global_position = focus
+	Game.player.visual.rotation.y = PI
+	Game.player.show()
+	Game.player.combat.equip(0)
+	Game.player.visual.animate(.016,0,0,true,false)
+	var guards: Array = Game.world.encounters.squads.camp.members
+	for i in guards.size():
+		var angle = i*TAU/guards.size()
+		guards[i].global_position = focus+Vector3(sin(angle),0,cos(angle))*2.3
+		guards[i].visual.rotation.y = angle+PI
+		guards[i].cooldown = 0
+		guards[i].state = "chase"
+		guards[i].set_physics_process(true)
+	Game.world.encounters.engage("camp")
+	view.fov = 70
+	view.position = focus+Vector3(3.6,2.8,3.8)
+	view.look_at(focus+Vector3.UP*.9)
+	Game.player.update_region()
+	await get_tree().create_timer(5.0).timeout
+	Game.ui.hud.show()
+	await shot("43-squad-combat")
+	Game.ui.hud.hide()
+	await shot("44-captain-clash")
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path("res://artifacts/squad-frames"))
+	for i in 24:
+		await get_tree().create_timer(.06).timeout
+		await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png("res://artifacts/squad-frames/%02d.png"%i)
+	Game.ui.hud.show()
+	Game.ui.settings()
+	await shot("45-combat-difficulty")
+	Game.ui.close_modal()
+	Game.ui.map_screen()
+	await shot("46-squad-map")
+	Game.ui.close_modal()
+	Game.app.weather.set_weather(3)
+	Game.app.weather.rain_strength = 1
+	Game.app.weather.cloud_strength = 1
+	Game.ui.hud.hide()
+	await shot("47-monsoon-clash")
+	Game.app.weather.set_weather(0)
+	Game.app.weather.rain_strength = 0
+	Game.app.weather.cloud_strength = 0
+	Game.ui.hud.show()
+	Game.player.set_physics_process(true)
+	Game.player.camera.make_current()
+	view.queue_free()
+	for enemy in Game.world.enemies: enemy.set_physics_process(true)
+	for site in [["village",Vector2(-30,37)],["bridge scouts",Vector2(52,-12)],["camp combat",Vector2(70,-67)]]:
+		Game.player.global_position = Game.world.ground(site[1].x,site[1].y,.4)
+		Game.player.yaw = 0
+		Game.player.invulnerable = 100
+		await get_tree().create_timer(3.0).timeout
+		print("SQUAD SAMPLE · ",site[0]," · ",Engine.get_frames_per_second()," FPS · ",Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME)," draws")
+	print("SQUAD TOUR COMPLETE")

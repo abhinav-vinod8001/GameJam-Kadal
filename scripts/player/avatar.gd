@@ -110,12 +110,14 @@ func set_weapon(id: int):
 
 func animate(delta: float, speed: float, attack: float, blocking: bool, dodge: bool, combo: int = 0, thrust: bool = false, local_velocity: Vector3 = Vector3.ZERO, grounded: bool = true, vertical_speed: float = 0.0):
 	var blend = 1.0-exp(-delta*13.0)
+	var pedestrian = enemy or costume!="arun"
 	left_arm.scale = Vector3(.91,1.0,.95)
 	right_arm.scale = Vector3(.91,1.0,.95)
-	motion_blend = lerpf(motion_blend,clampf(speed/3.8,0.0,1.0),blend)
+	motion_blend = lerpf(motion_blend,clampf(speed/(.55 if pedestrian else 3.8),0.0,1.0),blend)
 	run_blend = lerpf(run_blend,clampf((speed-4.6)/3.7,0.0,1.0),blend)
 	breath_clock += delta
-	clock += delta*speed*TAU/lerpf(3.2,4.0,run_blend)
+	var cycle_distance = lerpf(.90,1.90,clampf((speed-.5)/3.0,0.0,1.0)) if pedestrian else lerpf(3.2,4.0,run_blend)
+	clock = fposmod(clock+delta*speed*TAU/cycle_distance,TAU)
 	landing = move_toward(landing,0.0,delta*2.8)
 	var gait = sin(clock)
 	var moving = motion_blend if grounded else 0.0
@@ -178,6 +180,48 @@ func animate(delta: float, speed: float, attack: float, blocking: bool, dodge: b
 	else:
 		weapon_root.rotation.y = 0
 	weapon_root.rotation.x = -.30 if attack<=0 and not blocking else 0.0
+	if pedestrian and grounded and not dodge:
+		walk_pose(cycle_distance,local_velocity,attack,blocking)
+
+func walk_pose(cycle_distance: float, local_velocity: Vector3, attack: float, blocking: bool):
+	# A foot stays down during stance, then lifts for the return step. Leg angles
+	# come from the ankle target so the knee bends during swing rather than contact.
+	var feet: Array[Vector2] = []
+	var reach := 0.0
+	for i in 2:
+		var phase = fposmod(clock/TAU+i*.5,1.0)
+		var along: float
+		var lift := 0.0
+		var amplitude = minf(.48,cycle_distance*.275)*motion_blend
+		if phase<.55:
+			along = lerpf(-amplitude,amplitude,phase/.55)
+		else:
+			var swing = (phase-.55)/.45
+			along = lerpf(amplitude,-amplitude,smoothstep(0.0,1.0,swing))
+			lift = sin(swing*PI)*.12*motion_blend
+		feet.append(Vector2(along,lift))
+		reach = maxf(reach,absf(along))
+	var lowering = .668-sqrt(maxf(.05,.668*.668-reach*reach))
+	hips.position = Vector3(sin(clock)*.008*motion_blend,-lowering-landing*.10,0)
+	hips.rotation = Vector3(0,sin(clock)*.035*motion_blend,0)
+	var direction = local_velocity.normalized() if local_velocity.length()>.03 else Vector3.FORWARD
+	for i in 2:
+		var foot = feet[i]
+		var down = (.715+hips.position.y-.05-foot.y)/1.086
+		var z = foot.x*(-direction.z)/1.086
+		var x = -foot.x*direction.x/1.086
+		var distance_value = clampf(Vector3(x,down,z).length(),.08,.6175)
+		var knee_angle = PI-acos(clampf((.30*.30+.318*.318-distance_value*distance_value)/(2*.30*.318),-1.0,1.0))
+		var hip_angle = atan2(-z,sqrt(down*down+x*x))+acos(clampf((.30*.30+distance_value*distance_value-.318*.318)/(2*.30*distance_value),-1.0,1.0))
+		legs[i].rotation = Vector3(hip_angle,0,atan2(x,down))
+		knees[i].rotation = Vector3(-knee_angle,0,0)
+	# Arms counter the advancing foot; the weapon hand retains its combat pose.
+	if attack<=0 and not blocking:
+		left_arm.rotation.x = -.06+sin(clock)*.28*motion_blend
+		right_arm.rotation.x = -.12-sin(clock)*.24*motion_blend
+		if enemy and weapon_id==1:
+			right_arm.rotation.x = -.40-sin(clock)*.09*motion_blend
+			elbows[1].rotation.x = .38
 
 func swim_pose():
 	var stroke = breath_clock*3.6

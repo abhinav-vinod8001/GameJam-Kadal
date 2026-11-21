@@ -1,6 +1,6 @@
 # Verification · 21 November 2026
 
-Latest build, **21 November 2026**: **93 checks passed** after the wildlife and hill temple update. Earlier sections below preserve the results from previous builds; see the final section for current validation.
+Latest build, **21 November 2026**: **163 checks passed** after the Malayalam speech and NPC walking update. Earlier sections below preserve previous-build results; see the final section for current validation.
 
 Test environment: installed **Godot 4.3 stable**, Compatibility rendering, OpenGL 4.1 / Metal on **Apple M3**, native macOS window at **1280 × 800**.
 
@@ -90,3 +90,39 @@ All 13 entries in `wildlife-protected-files.json` match their pre-update SHA-256
 After three seconds of settling in each view, capped gameplay point samples were **59 FPS in the village** and **60 FPS at the deer clearing, elephant clearing, and hill temple**. These are short readings rather than a sustained benchmark. Screenshot-loop rates are lower because they include PNG readback and disk writes.
 
 A fresh ZIP extraction imported all new global script classes and resources cleanly, then passed the complete **49-check smoke suite** using the real renderer. The final archive was checked for CRC integrity, executable launcher permissions, byte-for-byte source agreement, and parity with the refreshed `dist/KADAL` folder.
+
+
+## Soldier squads and difficulty · 21 November 2026
+
+The build passed **55 smoke checks, 44 general physics checks, and 25 dedicated soldier checks: 124 total**, using Godot 4.3 Compatibility on Apple M3 at 1280 × 800. Source import and the three rendered suites completed without script, shader, import, or cleanup errors. Logs are saved as `docs/validation/soldiers-{import,smoke,integration,combat}.txt`.
+
+There are **12 soldiers in three squads**: three level 1 bridge scouts, four level 2 forest patrol soldiers, and five level 3 camp guards, including the captain. Spearmen and swordsmen use different weapons and reach; the captain has more health / damage, a marked crest, and a frontal recovery guard which heavy blows can break. Health and damage grow with encounter level, while windup and recovery shorten.
+
+Shared squad alerting, approach angles, separation, obstacle probes, and gateway waypoints support group pursuit. Easy permits two active attackers, Normal three, and Hard four, with profile-specific health, damage, warning, recovery, and opening intervals. Attack slots span windup and strike; actual strikes also overlap. The rendered test recorded a Normal peak of three concurrent attack cycles and two overlapping strikes, and a Hard peak of four attack cycles and two overlapping strikes. Existing parry, dodge invulnerability, and one-hit-per-strike behavior remain effective.
+
+Difficulty is selectable from Settings and saved with the existing preferences. Changing it preserves each living soldier's health percentage and cancels pending strikes before resuming. The HUD reports the nearby squad's level and remaining count; the map marks all three encounters. Individual health labels appear for damaged or locked targets and for the captain, limiting clutter. Soldier animation updates reduce with distance; their extra meshes and warning rings are excluded from water reflections.
+
+The camp wall has a wide gateway, an entry ramp, and a solid raised floor. The dedicated test begins with guards at their actual camp posts: all five reached within approximately 3.2 metres of the player on the trail. A held-input walking test enters the camp through the gateway without a jump, and a settled guard's warning ring is checked above the visible floor. Remaining soldiers return to their posts when the player escapes or respawns; defeated soldiers remain defeated until a new run.
+
+The ledger gate now checks whether the captain's entire five-person squad has been defeated. Three scout kills cannot bypass it. Tests also preserve early camp clearing before investigation, prevent duplicate kill / squad rewards, and reset all squads on a new run. Routing a squad grants level-based bonus fanam and one healing herb, alongside individual kill rewards.
+
+All 12 entries in `soldiers-protected-files.json` retain their pre-update SHA-256 hashes: player and avatar controls / art, weapon rules and effects, boat controls, all wildlife behavior / art / placement, the hill temple, and original weapon / conversation data. Combat and quest manager changes in this update are intentional and recorded separately from the manifests for earlier visual-only builds.
+
+The rendered tour covers the three squads, live group combat, settings, the encounter map, and rain. A 24-frame preview records actual overlapping attack animations. After three seconds of settling per view, the 60 FPS capped point samples recorded **54 FPS in the village, 56 FPS at the bridge scouts, and 57 FPS in camp combat**. These are short samples rather than a sustained benchmark; PNG readback and writes lower the screenshot-loop readings.
+
+A fresh ZIP extraction imported the new encounter class and completed all **55 smoke checks** with the real renderer. Final packaging verifies archive CRC integrity, executable launcher permissions, exact runtime-source agreement with the tested extraction, and byte-for-byte parity between source, archive and the refreshed `dist/KADAL` directory. The download excludes engine caches and generated capture frames.
+
+
+## Malayalam speech and NPC walking · 21 November 2026
+
+The updated game passed **55 smoke checks, 44 physics / input checks, 25 soldier checks, and 39 speech / gait checks: 163 total**, with Godot 4.3 Compatibility on Apple M3. Clean logs are stored as `docs/validation/dialogue-{import,smoke,integration,soldiers,speech}.txt`.
+
+The 114 bundled MP3 clips cover 30 friendly characters, 12 soldiers, weather remarks, and quest context. Every resident has distinct opening and follow-up dialogue. Asset checks compare the Malayalam text hashes against the generated manifest, load every clip, and confirm that character dialogue pages match their spoken text. Separate validation verifies every MP3 checksum. Playback uses bundled resources and does not make network requests. The voices are synthesized, with pitch variation; they are not a cast of recorded actors.
+
+Actual physics updates exercise automatic proximity greetings, distance / height limits, solid-wall occlusion, individual / squad cooldowns, revisits, soldier callouts, dead-speaker cleanup, conversation handover, follow-up cycling, optional English translation, pause, walking away, new-run reset, and returning to the menu. A regression check covers opening a conversation in the same frame that a new run replaces its soldiers, before the old nodes are freed.
+
+The gait uses measured horizontal travel, a planted stance and lifted return step, and knee angles solved from foot targets. At the pedestrian speed of 0.72 m/s, the sampled hip motion spans approximately 1.12 radians. Foot sole positions during the flat-ground sample range from approximately −0.021 to 0.132 metres, including the raised swing step. Stationary poses settle and soldiers retain their attack pose. The existing movement and squad suites verify routing, combat, parries, weather, boats, wildlife, temple navigation, and quest progression after the shared avatar changes.
+
+Rendered previews show Malayalam subtitles at the market and camp, voiced conversation pages, dialogue settings, and a walking animation. These views were inspected for glyph shaping, subtitle / prompt separation, and settings layout at 1280 × 800. Native-speaker editorial review and a human listening pass remain outside the automated checks.
+
+A fresh ZIP extraction imported its fonts, audio and scripts without errors, then passed all **55 smoke checks and 39 speech / gait checks** using the native renderer. Package validation checks CRC integrity, 114 bundled speech clips, executable launcher permissions, and byte-for-byte agreement between runtime sources in the workspace, the tested extraction, the refreshed `dist/KADAL` folder and the final archive. Fresh-extraction logs are saved as `docs/validation/dialogue-package-{import,smoke,speech}.txt`.

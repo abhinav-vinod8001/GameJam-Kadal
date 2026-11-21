@@ -17,9 +17,11 @@ func press(action: String, amount: int = 1):
 	await frames(1)
 
 func _ready():
+	Game.set_difficulty(1,false)
 	Engine.max_fps = 60
 	Game.app.start_game("roam")
 	Game.ui.close_modal()
+	for guard in Game.world.enemies: guard.set_physics_process(false)
 	await frames(150)
 	var p = Game.player
 	var walker = Game.world.population.villagers[11]

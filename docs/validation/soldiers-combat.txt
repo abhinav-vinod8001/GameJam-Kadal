@@ -1,0 +1,43 @@
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M3
+
+HILL TEMPLE · two roof tiers · carved veranda · courtyard · walkable gateway
+SOLDIERS · 12 soldiers · 3 squads · levels 1–3 · Normal
+WORLD LIFE · 468 extra trees · 3024 rice clumps · 13 stalls · 30 friendly NPCs
+WILDLIFE · 4 cats · 3 dogs · 5 deer · 2 elephants
+SOLDIERS · 12 soldiers · 3 squads · levels 1–3 · Normal
+PASS · One soldier alerts the rest of its squad
+NORMAL ATTACK PEAK · (3, 2)
+PASS · Multiple soldiers overlap their windups and actual strikes
+PASS · Normal difficulty bounds concurrent attackers at three
+PASS · Invulnerability protects the player from simultaneous squad attacks
+PASS · Soldier movement and attack timers pause during settings
+PASS · Settings expose a combat difficulty selector
+PASS · A soldier's warning ring precedes damage
+PASS · A committed soldier strike damages a player in reach
+PASS · A strike resolves damage only once
+PASS · A perfect parry interrupts a soldier's active strike
+PASS · A dodge window avoids an incoming squad strike
+PASS · Easy difficulty permits two attackers together
+PASS · Hard difficulty increases damage and shortens attack warnings
+HARD ATTACK PEAK · (4, 2)
+PASS · Hard difficulty permits four concurrent attackers
+PASS · Encounter HUD identifies the nearby squad's level
+PASS · Changing difficulty cancels pending attacks before resuming
+PASS · Squads disengage when the player dies
+PASS · Captain guards frontal light blows during recovery
+PASS · Heavy blows break the captain's guard
+PASS · Soldiers stop pursuing beyond their encounter area
+SOLDIERS · 12 soldiers · 3 squads · levels 1–3 · Normal
+PASS · Starting a new run resets all squads and defeat progress
+PASS · Camp sentries detect a player approaching along the real trail
+CAMP APPROACH · spearman · (63.21872, 1.227535, -56.45466) · distance 3.13976573944092 · recover
+CAMP APPROACH · swordsman · (68.31718, 1.174451, -55.00251) · distance 2.32105612754822 · strike
+CAMP APPROACH · spearman · (67.49146, 1.324628, -57.76147) · distance 3.13853764533997 · windup
+CAMP APPROACH · swordsman · (66.0295, 1.224759, -57.3356) · distance 2.33728718757629 · recover
+CAMP APPROACH · captain · (66.43226, 1.232443, -57.85948) · distance 2.89296674728394 · chase
+PASS · Several soldiers reach the trail together from their original camp posts
+CAMP GATE EXIT · (69.00002, 1.754698, -66.60635)
+PASS · The camp gateway and raised floor are reachable without jumping
+PASS · Soldier warning rings remain visible above the camp floor
+SOLDIER RESULT · 25 checks · 0 failures

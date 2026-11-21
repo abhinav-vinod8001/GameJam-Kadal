@@ -6,6 +6,7 @@ var clock := 0.0
 
 func _ready():
 	add_to_group("interactables")
+	add_to_group("speech_actors")
 	set_meta("kind","npc")
 	set_meta("prompt","Speak with "+Game.dialogues[npc_id].name)
 	visual = KadalAvatar.new()
@@ -18,6 +19,7 @@ func _ready():
 	Craft.label(self,Game.dialogues[npc_id].name,Vector3(0,2.25,0),24)
 
 func _process(delta):
+	if Game.modal: return
 	clock += delta
 	if not is_instance_valid(Game.player): return
 	var diff = Game.player.global_position-global_position

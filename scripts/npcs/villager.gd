@@ -15,9 +15,12 @@ var animation_time := 0.0
 var greeting := 0.0
 var was_near := false
 var speed_value := .75
+var current_speed := 0.0
+var animation_motion := Vector3.ZERO
 
 func _ready():
 	add_to_group("interactables")
+	add_to_group("speech_actors")
 	add_to_group("villagers")
 	set_meta("kind","npc")
 	set_meta("prompt","Speak with "+str(Game.dialogues[npc_id].name))
@@ -84,7 +87,10 @@ func _process(delta):
 	greeting = maxf(0,greeting-delta)
 	pause_time = maxf(0,pause_time-delta)
 	var moving = 0.0
-	if not route.is_empty() and not near and pause_time<=0 and Game.mode!="menu":
+	var before = global_position
+	var wants_walk = not route.is_empty() and not near and pause_time<=0 and Game.mode!="menu"
+	current_speed = move_toward(current_speed,speed_value if wants_walk else 0.0,delta*1.8)
+	if wants_walk:
 		var target = route[route_index]
 		var difference = target-global_position
 		difference.y = 0
@@ -94,24 +100,30 @@ func _process(delta):
 			route_index = clampi(route_index+route_direction,0,route.size()-1)
 			pause_time = 1.4+fmod(clock,2.1)
 		else:
-			var step = minf(difference.length(),speed_value*delta)
+			var step = minf(difference.length(),current_speed*delta)
 			global_position += difference.normalized()*step
 			global_position.y = Malanadu.height_at(global_position.x,global_position.z)+.035
 			visual.rotation.y = lerp_angle(visual.rotation.y,atan2(-difference.x,-difference.z),1-exp(-delta*5))
-			moving = speed_value
+			moving = step/maxf(delta,.001)
+	var travelled = global_position-before
+	travelled.y = 0
+	animation_motion += travelled
 	if near:
 		var look = Game.player.global_position-global_position
 		visual.rotation.y = lerp_angle(visual.rotation.y,atan2(-look.x,-look.z),1-exp(-delta*4))
 	animation_time += delta
 	var interval = 0.0 if view_distance<25 else (.067 if view_distance<48 else .20)
 	if animation_time<interval or not visual.visible: return
-	var elapsed = minf(animation_time,.25)
+	var elapsed = animation_time
+	var actual_motion = animation_motion/maxf(elapsed,.001)
+	animation_motion = Vector3.ZERO
 	animation_time = 0
-	visual.animate(elapsed,moving,0,false,false)
+	var scale_value = maxf(.1,visual.scale.y)
+	visual.animate(elapsed,actual_motion.length()/scale_value,0,false,false,0,false,visual.global_basis.inverse()*actual_motion)
 	if greeting>0:
 		visual.left_arm.rotation = Vector3(2.1,0,.35+sin(clock*13)*.22)
 		visual.elbows[0].rotation.x = .65
-	elif activity=="farm" and not near:
+	elif activity=="farm" and not near and moving<.05:
 		visual.torso.rotation.x = -.46+sin(clock*1.8)*.11
 		visual.right_arm.rotation.x = 1.0+sin(clock*1.8)*.20
 		visual.left_arm.rotation.x = .65

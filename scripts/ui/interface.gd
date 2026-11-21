@@ -21,6 +21,7 @@ var weapon_text: Label
 var quest_text: Label
 var quest_title: Label
 var compass: Label
+var encounter_text: Label
 var prompt: PanelContainer
 var prompt_label: Label
 var notification: Label
@@ -37,6 +38,11 @@ var modal_locked := false
 var dialogue_ml: Label
 var dialogue_en: Label
 var menu_footer: Label
+var speech_panel: PanelContainer
+var speech_name: Label
+var speech_ml: Label
+var speech_en: Label
+var dialogue_page := 0
 
 func _ready():
 	root = Control.new()
@@ -200,6 +206,13 @@ func create_hud():
 	anchor(compass,Control.PRESET_CENTER_TOP,Vector2(-145,32))
 	compass.size.x = 290
 	compass.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	encounter_text = text(hud,"",14,GOLD)
+	anchor(encounter_text,Control.PRESET_CENTER_TOP,Vector2(-210,71))
+	encounter_text.size.x = 420
+	encounter_text.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	encounter_text.add_theme_color_override("font_shadow_color",INK)
+	encounter_text.add_theme_constant_override("shadow_offset_y",2)
+	encounter_text.hide()
 	var quest_panel = panel(hud)
 	quest_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	anchor(quest_panel,Control.PRESET_TOP_RIGHT,Vector2(-362,32))
@@ -265,6 +278,37 @@ func create_hud():
 	lock_marker.hide()
 	damage_rect = full_rect(hud,Color("a74c3a00"))
 	damage_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	create_subtitles()
+
+func create_subtitles():
+	speech_panel = panel(hud)
+	speech_panel.name = "MalayalamSubtitles"
+	speech_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	anchor(speech_panel,Control.PRESET_CENTER_BOTTOM,Vector2(-360,-300))
+	speech_panel.custom_minimum_size.x = 720
+	speech_panel.add_theme_stylebox_override("panel",style(Color("071f25ed"),GOLD,18))
+	var box = VBoxContainer.new()
+	box.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	box.add_theme_constant_override("separation",6)
+	speech_panel.add_child(box)
+	speech_name = text(box,"",12,GOLD)
+	speech_ml = wrapped(box,"",25,CREAM)
+	speech_ml.add_theme_font_override("font",malayalam)
+	speech_ml.custom_minimum_size.x = 682
+	speech_en = wrapped(box,"",14,MUTED)
+	speech_panel.hide()
+
+func show_speech(speaker_name: String,line: Dictionary,enemy: bool = false):
+	speech_name.text = speaker_name.to_upper()
+	speech_name.add_theme_color_override("font_color",Color("efad7c") if enemy else GOLD)
+	speech_ml.text = line.ml
+	speech_en.text = line.en
+	speech_en.visible = Game.subtitle_translation
+	speech_panel.reset_size()
+	speech_panel.show()
+
+func hide_speech():
+	if is_instance_valid(speech_panel): speech_panel.hide()
 
 func bar(parent: Node,color_value: Color,maximum: float) -> ProgressBar:
 	var b = ProgressBar.new()
@@ -300,6 +344,8 @@ func set_prompt(value: String):
 
 func _process(_delta):
 	if not Game.player or Game.mode=="menu": return
+	if speech_panel.visible:
+		speech_panel.position.y = root.size.y-182-speech_panel.size.y
 	var p = Game.player
 	hp_bar.value = p.health
 	stamina_bar.value = p.stamina
@@ -312,6 +358,10 @@ func _process(_delta):
 	var heading = fposmod(rad_to_deg(p.yaw),360)
 	var direction = ["N","NW","W","SW","S","SE","E","NE"][int(round(heading/45))%8]
 	compass.text = "·     %s     ·     %03d°     ·"%[direction,int(heading)]
+	var encounter = Game.world.encounters.nearby_squad()
+	encounter_text.visible = not encounter.is_empty() and not Game.modal
+	if not encounter.is_empty():
+		encounter_text.text = "LV %d · %s\n%s · %s"%[encounter.level,encounter.title,"CLEARED" if encounter.cleared else "%d / %d SOLDIERS"%[encounter.remaining,encounter.total],Game.DIFFICULTIES[Game.difficulty].name.to_upper()]
 	quest_marker.hide()
 	lock_marker.hide()
 	if not Game.modal and is_instance_valid(p.locked):
@@ -353,6 +403,7 @@ func damage_flash():
 	create_tween().tween_property(damage_rect,"color:a",0.0,.45)
 
 func begin_modal(kicker: String, title_value: String, width: float = 700):
+	if is_instance_valid(Game.speech): Game.speech.stop()
 	modal_locked = false
 	if Game.player: Game.player.combat.cancel()
 	for c in overlay.get_children(): c.queue_free()
@@ -379,6 +430,7 @@ func begin_modal(kicker: String, title_value: String, width: float = 700):
 
 func close_modal():
 	if modal_locked and Game.mode!="menu" and Game.player.health<=0: return
+	if is_instance_valid(Game.speech): Game.speech.stop()
 	modal_locked = false
 	Game.modal = false
 	if overlay:
@@ -395,6 +447,7 @@ func introduction():
 
 func dialogue(id: String):
 	current_npc = id
+	dialogue_page = 0
 	var d = Game.dialogues[id]
 	begin_modal(d.role.to_upper(),d.name,760)
 	dialogue_ml = wrapped(modal_box,d.ml,23,CREAM)
@@ -404,11 +457,16 @@ func dialogue(id: String):
 	row.add_theme_constant_override("separation",10)
 	modal_box.add_child(row)
 	button(row,"കൂടുതൽ പറയൂ · Tell me more",func():
-		dialogue_ml.text = d.more_ml
-		dialogue_en.text = d.more_en
+		dialogue_page += 1
+		var options: Array = Game.speech.script_data.pools[id]
+		var line: Dictionary = Game.speech.script_data.lines[options[dialogue_page%options.size()]]
+		dialogue_ml.text = line.ml
+		dialogue_en.text = line.en
+		Game.speech.converse(id,dialogue_page)
 	).add_theme_font_override("font",malayalam)
 	if id=="meera": button(row,"സാധനങ്ങൾ · Trade",shop,true).add_theme_font_override("font",malayalam)
 	button(modal_box,"വീണ്ടും കാണാം  ·  Until next time",close_modal).add_theme_font_override("font",malayalam)
+	Game.speech.converse(id)
 
 func shop():
 	begin_modal("MEERA'S SPICE & PROVISIONS","A little care goes a long way",780)
@@ -426,7 +484,7 @@ func shop():
 func clue():
 	begin_modal("EVIDENCE   /   A TORN RED SAIL","The current tells a story")
 	wrapped(modal_box,"A clean cut. Not a storm's work. In the mud: three sets of footprints, and the sweet scent of spilled cardamom.",26,CREAM,true)
-	wrapped(modal_box,"The trail crosses the wooden bridge and turns north into Vanam. Three raiders guard a ruined camp. Watch their amber warning rings, then dodge or parry as the blow lands.",18,MUTED)
+	wrapped(modal_box,"The trail crosses the wooden bridge and turns north into Vanam. Level 1 scouts watch the bridge, a level 2 patrol holds the trail, and a level 3 captain commands the ruined camp. Squads attack together. Watch the warning rings, then dodge or parry.",18,MUTED)
 	button(modal_box,"FOLLOW THE TRAIL     →",close_modal,true)
 
 func shrine():
@@ -452,7 +510,25 @@ func pause_menu():
 
 func settings():
 	begin_modal("KADAL   /   SETTINGS","Make yourself at home",700)
+	var difficulty_row = HBoxContainer.new()
+	modal_box.add_child(difficulty_row)
+	var difficulty_label = text(difficulty_row,"Combat difficulty",16,MUTED)
+	difficulty_label.custom_minimum_size.x = 240
+	var choice = OptionButton.new()
+	choice.name = "CombatDifficulty"
+	choice.custom_minimum_size = Vector2(300,36)
+	for profile in Game.DIFFICULTIES: choice.add_item(profile.name+" · up to %d attackers"%profile.attackers)
+	choice.select(Game.difficulty)
+	choice.item_selected.connect(func(index): Game.set_difficulty(index))
+	difficulty_row.add_child(choice)
+	wrapped(modal_box,"Easy gives longer warnings and softer blows. Hard adds tougher soldiers and faster group attacks. Applies immediately.",13,MUTED)
 	setting_slider("Sound volume",Game.volume,0,1,func(v): Game.volume=v; Game.save_settings())
+	setting_slider("Dialogue volume",Game.voice_volume,0,1,func(v): Game.voice_volume=v; Game.save_settings())
+	var translation = CheckButton.new()
+	translation.text = "English translation below Malayalam subtitles"
+	translation.button_pressed = Game.subtitle_translation
+	translation.toggled.connect(func(v): Game.subtitle_translation=v; Game.save_settings())
+	modal_box.add_child(translation)
 	setting_slider("Camera sensitivity",Game.sensitivity*1000,1,7,func(v): Game.sensitivity=v/1000; Game.save_settings())
 	setting_slider("Effect density",Game.effects_scale,.3,1.2,func(v): Game.effects_scale=v)
 	var shake = CheckButton.new()

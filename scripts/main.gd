@@ -16,6 +16,8 @@ func _ready():
 	add_child(Game.fx)
 	Game.audio = load("res://scripts/managers/audio.gd").new()
 	add_child(Game.audio)
+	Game.speech = load("res://scripts/managers/speech.gd").new()
+	add_child(Game.speech)
 	Game.player = KadalPlayer.new()
 	Game.player.position = Game.SPAWN
 	add_child(Game.player)
@@ -29,6 +31,10 @@ func _ready():
 	menu_camera.current = true
 	Game.ui = load("res://scripts/ui/interface.gd").new()
 	add_child(Game.ui)
+	if "--soldiers" in OS.get_cmdline_user_args():
+		call_deferred("soldier_test")
+	if "--speech" in OS.get_cmdline_user_args():
+		call_deferred("speech_test")
 	if "--smoke" in OS.get_cmdline_user_args():
 		call_deferred("smoke_test")
 	if "--integration" in OS.get_cmdline_user_args():
@@ -40,6 +46,7 @@ func _ready():
 
 func start_game(mode_value: String):
 	Game.reset_run(mode_value)
+	Game.speech.reset()
 	Game.world.reset_enemies()
 	for n in get_tree().get_nodes_in_group("interactables"):
 		if n.get_meta("kind","") in ["chest","herb"]:
@@ -55,6 +62,7 @@ func start_game(mode_value: String):
 	else: Game.notice.emit("Welcome to Malanadu · M opens the map · 1–5 change weapons")
 
 func return_to_menu():
+	Game.speech.reset()
 	Game.mode = "menu"
 	Game.modal = false
 	Game.player.hide()
@@ -85,7 +93,10 @@ func find_interaction():
 		if d<distance_value:
 			distance_value = d
 			nearest = n
-	Game.ui.set_prompt(nearest.get_meta("prompt","") if nearest else "")
+	var prompt_value = nearest.get_meta("prompt","") if nearest else ""
+	if nearest and nearest.get_meta("kind","")=="ledger" and not Game.camp_cleared():
+		prompt_value = "Ledger guarded · %d camp soldiers remain"%Game.world.encounters.living("camp")
+	Game.ui.set_prompt(prompt_value)
 
 func _unhandled_input(event):
 	if event.is_action_pressed("pause"):
@@ -119,8 +130,8 @@ func interact(n: Node3D):
 			Game.ui.clue()
 			Game.advance(2)
 		"ledger":
-			if Game.defeated<3:
-				Game.notice.emit("The raiders are guarding the ledger. Defeat all three.")
+			if not Game.camp_cleared():
+				Game.notice.emit("The camp still has %d soldiers. Defeat its captain and guards."%Game.world.encounters.living("camp"))
 				return
 			if Game.mode=="story" and Game.quest_step<4:
 				Game.notice.emit("A cargo ledger. Investigate the torn sail at the backwater first.")
@@ -179,3 +190,9 @@ func _exit_tree():
 	Engine.time_scale = 1.0
 	Craft.cache.clear()
 	Craft.geometry.clear()
+
+func soldier_test():
+	add_child(load("res://tests/soldiers.gd").new())
+
+func speech_test():
+	add_child(load("res://tests/speech.gd").new())

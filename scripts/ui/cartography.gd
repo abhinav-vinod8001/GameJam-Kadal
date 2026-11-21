@@ -3,7 +3,9 @@ extends Control
 var sites = [
 	[Vector2(-30,37),"AZHIMUKHAM", "Coastal village"],
 	[Vector2(28,30),"KAYAL", "Backwaters"],
-	[Vector2(71,-54),"VANAM", "Forest camp"],
+	[Vector2(69,-66),"LV 3 · CAMP GUARD", "Captain and four soldiers"],
+	[Vector2(61,-40),"LV 2 · PATROL", "Four forest soldiers"],
+	[Vector2(54,-18),"LV 1 · SCOUTS", "Three bridge soldiers"],
 	[Vector2(-78,-80),"MALAYORAM", "Hill shrine"],
 	[Vector2(-42,-35),"KOTTA", "Kalari courtyard"]
 ]

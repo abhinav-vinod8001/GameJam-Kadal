@@ -10,6 +10,7 @@ var world
 var fx
 var ui
 var audio
+var speech
 var mode := "menu"
 var modal := false
 var quest_step := 0
@@ -17,10 +18,18 @@ var coins := 75
 var herbs := 3
 var upgrade := 0
 var defeated := 0
+var difficulty := 1
+const DIFFICULTIES = [
+	{"name":"Easy","health":.8,"damage":.65,"windup":1.2,"recovery":1.2,"attackers":2,"spacing":.38},
+	{"name":"Normal","health":1.0,"damage":1.0,"windup":1.0,"recovery":1.0,"attackers":3,"spacing":.25},
+	{"name":"Hard","health":1.2,"damage":1.3,"windup":.85,"recovery":.85,"attackers":4,"spacing":.18}
+]
 var discovered: Array[String] = []
 var sensitivity := 0.003
 var effects_scale := 1.0
 var volume := 0.65
+var voice_volume := 1.0
+var subtitle_translation := true
 var shake_enabled := true
 var weapons: Array = []
 var dialogues: Dictionary = {}
@@ -61,13 +70,19 @@ func _ready():
 	if cfg.load("user://settings.cfg") == OK:
 		sensitivity = cfg.get_value("settings", "sensitivity", sensitivity)
 		volume = cfg.get_value("settings", "volume", volume)
+		voice_volume = clampf(float(cfg.get_value("settings","voice_volume",1.0)),0.0,1.0)
+		subtitle_translation = bool(cfg.get_value("settings","subtitle_translation",true))
 		shake_enabled = cfg.get_value("settings", "shake", true)
+		difficulty = clampi(int(cfg.get_value("settings","difficulty",1)),0,2)
 
 func save_settings():
 	var cfg = ConfigFile.new()
 	cfg.set_value("settings", "sensitivity", sensitivity)
 	cfg.set_value("settings", "volume", volume)
+	cfg.set_value("settings","voice_volume",voice_volume)
+	cfg.set_value("settings","subtitle_translation",subtitle_translation)
 	cfg.set_value("settings", "shake", shake_enabled)
+	cfg.set_value("settings", "difficulty", difficulty)
 	cfg.save("user://settings.cfg")
 	AudioServer.set_bus_volume_db(0, linear_to_db(maxf(volume, 0.001)))
 
@@ -78,7 +93,7 @@ func advance(expected: int):
 	if mode != "story" or quest_step != expected:
 		return
 	quest_step += 1
-	if quest_step == 3 and defeated >= 3: quest_step = 4
+	if quest_step == 3 and camp_cleared(): quest_step = 4
 	quest_changed.emit()
 	if audio: audio.play("discover")
 	notice.emit("Objective updated · " + OBJECTIVES[quest_step])
@@ -87,6 +102,8 @@ func advance(expected: int):
 		ui.ending()
 
 func objective() -> String:
+	if mode=="story" and quest_step==3 and is_instance_valid(world.encounters):
+		return "Defeat the level 3 camp guard · %d soldiers remain."%world.encounters.living("camp")
 	return OBJECTIVES[quest_step] if mode == "story" else "Follow the waterways. Find your own story."
 
 func buy(id: String) -> bool:
@@ -107,7 +124,17 @@ func buy(id: String) -> bool:
 func defeated_enemy():
 	defeated += 1
 	coins += 12
-	if defeated >= 3: advance(3)
+	if camp_cleared(): advance(3)
+	quest_changed.emit()
+
+func camp_cleared() -> bool:
+	return is_instance_valid(world) and is_instance_valid(world.encounters) and world.encounters.is_cleared("camp")
+
+func set_difficulty(index: int, persist: bool = true):
+	difficulty = clampi(index,0,DIFFICULTIES.size()-1)
+	if is_instance_valid(world) and is_instance_valid(world.encounters): world.encounters.apply_difficulty(difficulty)
+	if persist: save_settings()
+	state_changed.emit()
 
 func reset_run(new_mode: String):
 	mode = new_mode

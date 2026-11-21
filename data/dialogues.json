@@ -1,8 +1,50 @@
 {
- "ravi":{"name":"Ravi","role":"Boatman · Azhimukham","ml":"നമ്മുടെ വഞ്ചി ഇതുവരെ മടങ്ങിയില്ല. കടവിൽ ഒന്നു നോക്കാമോ?","en":"Our vanchi hasn't returned. Will you look along the water? Meera saw who loaded the cargo. Start at her spice stall.","more_ml":"മഴ വരുന്നതിനു മുമ്പ് തിരിച്ചു വരണം. സൂക്ഷിക്കണേ.","more_en":"Come back before the rain grows heavy. Take the boat if you need it. And keep your eyes on the eastern bank."},
- "meera":{"name":"Meera","role":"Spice merchant","ml":"വരൂ! നല്ല കുരുമുളകും ഏലക്കയും ഉണ്ട്. എന്താണ് വേണ്ടത്?","en":"Welcome! Fresh pepper and cardamom. The missing boat? I saw men unload a red sail north of the jetty. Look beside the bend in the backwater.","more_ml":"അവിടെ ഒരു ചുവന്ന പായ കണ്ടിരുന്നു. ഒന്നു ചെന്നു നോക്കൂ.","more_en":"There was a torn red sail at the bend. Something about those men felt wrong. You should investigate."},
- "amma":{"name":"Devaki Amma","role":"Keeper of village stories","ml":"ഈ നാടിന് ഒരുപാട് കഥകൾ പറയാനുണ്ട്, മോനേ.","en":"This land has many stories to tell, child. At the old shrine, a bell rings when there is no wind. Some things are best heard in the rain.","more_ml":"കാട്ടിലൂടെ പോകുമ്പോൾ വഴി തെറ്റരുത്. സൂക്ഷിച്ചു പോകണം.","more_en":"Keep to the forest path. The old stone lamps will guide you to Kotta. A lantern waits for anyone who reaches the hill shrine."},
- "fish":{"name":"Fathima","role":"Fish seller","ml":"ഇന്നത്തെ മീനാണ്! നല്ല മത്തിയും അയലയും ഉണ്ട്.","en":"Fresh catch today! Sardines and mackerel. The market is quiet since the vanchi went missing. Bring our people home safely.","more_ml":"കടവിൽ രവിയെ കണ്ടോ? അവന് എന്തെങ്കിലും അറിയാമായിരിക്കും.","more_en":"Have you spoken to Ravi at the jetty? He knows these waters better than anyone."},
- "guru":{"name":"Govindan Gurukkal","role":"Kalari instructor","ml":"ആദ്യം ചുവട് ഉറപ്പിക്കണം. പിന്നെയാണ് ആയുധം.","en":"First find your footing. Only then, your weapon. Press block just before a blow lands to turn it aside. After a parry, your next strike hits harder.","more_ml":"ശരീരവും മനസ്സും ഒരുപോലെ പരിശീലിക്കണം.","more_en":"Train body and mind together. Sword for balance, spear for distance, staff for space. The urumi demands patience. Try the practice post beside me."},
- "smith":{"name":"Kannan","role":"Village blacksmith","ml":"നല്ല ആയുധത്തിന് നല്ല പരിചരണം വേണം.","en":"A good weapon needs care. Meera carries my whetstones. Hone your weapons at her stall, and your strikes will bite deeper.","more_ml":"മഴയിൽ ആയുധം തുരുമ്പിക്കാതെ നോക്കണം.","more_en":"Keep the blade clean after rain. Visit the old courtyard beyond the bridge if you want a challenge."}
+  "ravi": {
+    "name": "Ravi",
+    "role": "Boatman · Azhimukham",
+    "ml": "നമ്മുടെ വഞ്ചി ഇതുവരെ മടങ്ങിയില്ല. മീരയോട് ചോദിക്കൂ. ചരക്ക് കയറ്റിയവരെ അവൾ കണ്ടിട്ടുണ്ട്.",
+    "en": "Our vanchi has not returned. Ask Meera; she saw the people who loaded the cargo.",
+    "more_ml": "മഴ കനക്കുന്നതിനു മുമ്പ് തിരിച്ചു വരണം. വഞ്ചി എടുത്തോളൂ. കിഴക്കേ കരയിൽ ശ്രദ്ധിക്കണം.",
+    "more_en": "Come back before the rain grows heavy. Take the boat, and watch the eastern bank."
+  },
+  "meera": {
+    "name": "Meera",
+    "role": "Spice merchant",
+    "ml": "വരൂ! കുരുമുളകും ഏലക്കയും ഉണ്ട്. കാണാതായ വഞ്ചിയാണോ? വടക്കേ വളവിൽ ചിലർ ചുവന്ന പായ ഇറക്കുന്നത് കണ്ടു.",
+    "en": "Welcome! Pepper and cardamom for sale. The missing boat? I saw men unload a red sail at the northern bend.",
+    "more_ml": "കായലിന്റെ വളവിൽ കീറിയ ചുവന്ന പായയുണ്ട്. ആ ആളുകളെ കണ്ടപ്പോൾ സംശയം തോന്നി. ചെന്നു നോക്കൂ.",
+    "more_en": "There is a torn red sail at the bend. Those men looked suspicious. Go and investigate."
+  },
+  "amma": {
+    "name": "Devaki Amma",
+    "role": "Keeper of village stories",
+    "ml": "ഈ നാടിന് ഒരുപാട് കഥകൾ പറയാനുണ്ട്, മോനേ. കാറ്റില്ലാതെയും മലമുകളിലെ ക്ഷേത്രമണി മുഴങ്ങാറുണ്ട്.",
+    "en": "This land has many stories, child. The hill temple bell sometimes rings without a breeze.",
+    "more_ml": "കാട്ടിലൂടെ പോകുമ്പോൾ വഴി തെറ്റരുത്. കല്ലുവിളക്കുകൾ നോക്കി നടന്നാൽ കളരിയിലെത്താം.",
+    "more_en": "Do not lose your way in the forest. Follow the stone lamps to reach the kalari."
+  },
+  "fish": {
+    "name": "Fathima",
+    "role": "Fish seller",
+    "ml": "ഇന്നത്തെ മീനാണ്! നല്ല മത്തിയും അയലയും ഉണ്ട്. നമ്മുടെ ആളുകളെ സുരക്ഷിതമായി തിരിച്ചു കൊണ്ടുവരണം.",
+    "en": "Fresh fish! Sardines and mackerel. Bring our people home safely.",
+    "more_ml": "കടവിൽ രവിയെ കണ്ടോ? ഈ കായലിനെ അവനോളം അറിയുന്നവർ കുറവാണ്.",
+    "more_en": "Have you met Ravi at the jetty? Few people know these waters as well as he does."
+  },
+  "guru": {
+    "name": "Govindan Gurukkal",
+    "role": "Kalari instructor",
+    "ml": "ആദ്യം ചുവട് ഉറപ്പിക്കണം. പിന്നെയാണ് ആയുധം. അടി എത്തുന്നതിനു തൊട്ടുമുമ്പ് തടഞ്ഞാൽ തിരിച്ചടിക്കാൻ അവസരം കിട്ടും.",
+    "en": "First find your footing, then your weapon. Block just before a blow lands to create a chance to counter.",
+    "more_ml": "ശരീരവും മനസ്സും ഒരുപോലെ പരിശീലിക്കണം. അടുത്തുള്ള പരിശീലനത്തൂണിൽ ആയുധങ്ങൾ പരീക്ഷിക്കൂ.",
+    "more_en": "Train body and mind together. Try your weapons on the practice post beside me."
+  },
+  "smith": {
+    "name": "Kannan",
+    "role": "Village blacksmith",
+    "ml": "നല്ല ആയുധത്തിന് നല്ല പരിചരണം വേണം. മീരയുടെ കടയിൽ എന്റെ ഉരകല്ലുണ്ട്. ആയുധത്തിന് മൂർച്ച കൂട്ടിക്കോളൂ.",
+    "en": "A good weapon needs care. Meera sells my whetstones. Have your weapons honed there.",
+    "more_ml": "മഴ കഴിഞ്ഞാൽ വാൾ തുടയ്ക്കണം. തുരുമ്പ് പിടിച്ചാൽ മൂർച്ച പോകും.",
+    "more_en": "Wipe your sword after the rain. Rust will dull its edge."
+  }
 }

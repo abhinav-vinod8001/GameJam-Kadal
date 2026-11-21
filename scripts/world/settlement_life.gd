@@ -42,7 +42,7 @@ func instance_group(mesh: Mesh, transforms: Array[Transform3D], material: Materi
 	add_child(node)
 
 func tree_safe(p: Vector3) -> bool:
-	if p.y<1.0 or WildlifeLife.habitat_contains(p.x,p.z): return false
+	if p.y<1.0 or WildlifeLife.habitat_contains(p.x,p.z) or SoldierEncounters.contains_site(p.x,p.z): return false
 	if p.x>-63 and p.x<10 and p.z>-18 and p.z<61: return false
 	if p.x>58 and p.x<81 and p.z>-78 and p.z<-51: return false
 	if p.x>-76 and p.x<-63 and p.z>-70 and p.z<-53: return false

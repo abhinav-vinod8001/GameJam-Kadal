@@ -15,10 +15,10 @@
     "dialogue": {
       "name": "Leela",
       "role": "Fruit seller",
-      "ml": "കൃഷിയിടത്തിൽ നിന്നുള്ള പഴങ്ങളാണ്. ഒന്നു നോക്കൂ.",
-      "en": "Fresh fruit from the orchards. Take a look.",
-      "more_ml": "പഴുത്ത പഴങ്ങൾക്ക് നല്ല മധുരമാണ്.",
-      "more_en": "The ripe fruit is especially sweet."
+      "ml": "പഴുത്ത മാങ്ങയുണ്ട്, അരുണേ. ഒന്നു രുചിച്ചു നോക്കൂ.",
+      "en": "Ripe mangoes, Arun. Come and taste one.",
+      "more_ml": "യാത്രയ്ക്ക് പഴം എടുത്തോളൂ. വഴിയിൽ വിശക്കില്ല.",
+      "more_en": "Take some fruit for the journey so you will not go hungry."
     }
   },
   {
@@ -37,10 +37,10 @@
     "dialogue": {
       "name": "Madhavan",
       "role": "Potter",
-      "ml": "ഇവിടെ നല്ല മൺപാത്രങ്ങളുണ്ട്. ഒന്നു നോക്കൂ.",
-      "en": "Good clay pots here. Take a look.",
-      "more_ml": "കുടത്തിൽ വെള്ളം നല്ല തണുപ്പായിരിക്കും.",
-      "more_en": "Water stays cool in an earthen pot."
+      "ml": "പുതിയ മൺകുടങ്ങൾ നോക്കൂ. വെള്ളം നല്ല തണുപ്പോടെ ഇരിക്കും.",
+      "en": "Look at these new clay pots. They keep water cool.",
+      "more_ml": "ചൂളയിൽ ഇന്നലെ രാത്രി വരെ പണിയുണ്ടായിരുന്നു.",
+      "more_en": "I worked at the kiln until late last night."
     }
   },
   {
@@ -59,10 +59,10 @@
     "dialogue": {
       "name": "Safiya",
       "role": "Cotton trader",
-      "ml": "നല്ല പരുത്തിത്തുണിയുണ്ട്. ഏതു നിറമാണ് ഇഷ്ടം?",
-      "en": "Fine cotton cloth. Which color do you like?",
-      "more_ml": "മഴയിൽ നനയാതെ സൂക്ഷിക്കണം.",
-      "more_en": "Keep it dry when the rain arrives."
+      "ml": "നല്ല പരുത്തിത്തുണിയുണ്ട്. ഈ നിറം നിനക്ക് ചേരും.",
+      "en": "I have fine cotton cloth. This colour would suit you.",
+      "more_ml": "മഴയ്ക്കു മുമ്പ് തുണിയെല്ലാം അകത്തു വയ്ക്കണം.",
+      "more_en": "I must bring all the cloth inside before it rains."
     }
   },
   {
@@ -81,10 +81,10 @@
     "dialogue": {
       "name": "Hameed",
       "role": "Fish merchant",
-      "ml": "ഇന്നത്തെ മീനാണ്. കടവിൽ നിന്നു കൊണ്ടുവന്നതാണ്.",
-      "en": "Today's catch, brought straight from the jetty.",
-      "more_ml": "വഞ്ചികൾ ഉടനെ മടങ്ങിവരും.",
-      "more_en": "The boats should return soon."
+      "ml": "കടലിൽ നിന്ന് ഇപ്പോൾ കൊണ്ടുവന്ന മീനാണ്. നോക്കിക്കോളൂ.",
+      "en": "This fish has just come in from the sea. Take a look.",
+      "more_ml": "ഇന്ന് തിരമാല കൂടുതലായിരുന്നു. വഞ്ചിക്കാർ വൈകിയാണ് വന്നത്.",
+      "more_en": "The waves were high today, so the boatmen came in late."
     }
   },
   {
@@ -103,10 +103,10 @@
     "dialogue": {
       "name": "Janaki",
       "role": "Rice merchant",
-      "ml": "ഇത്തവണ നല്ല വിളവാണ് പ്രതീക്ഷിക്കുന്നത്.",
-      "en": "We are hoping for a good harvest this season.",
-      "more_ml": "നെല്ല് ഉണങ്ങാൻ വെയിൽ വേണം.",
-      "more_en": "We need sunshine to dry the rice."
+      "ml": "പുതിയ അരിയുണ്ട്. നമ്മുടെ പാടത്തെ വിളവാണ്.",
+      "en": "Fresh rice, grown in our own paddy fields.",
+      "more_ml": "ഈ വർഷം വിളവ് നന്നായാൽ എല്ലാവർക്കും ആശ്വാസമാകും.",
+      "more_en": "A good harvest this year would be a relief for everyone."
     }
   },
   {
@@ -125,10 +125,10 @@
     "dialogue": {
       "name": "Mani",
       "role": "Vegetable seller",
-      "ml": "കൃഷിയിടത്തിൽ നിന്നുള്ള പച്ചക്കറികളാണ്. ഒന്നു നോക്കൂ.",
-      "en": "Fresh vegetables from the fields. Take a look.",
-      "more_ml": "മഴ വരുന്നതിനു മുമ്പ് വീട്ടിലെത്തണം.",
-      "more_en": "We should get home before the rain."
+      "ml": "വെണ്ടയ്ക്കയും പാവയ്ക്കയും ഉണ്ട്. ഇന്നേ പറിച്ചതാണ്.",
+      "en": "Okra and bitter gourd, picked just today.",
+      "more_ml": "പച്ചക്കറിത്തോട്ടത്തിന് ഈ മഴ നല്ലതാണ്.",
+      "more_en": "This rain is good for the vegetable garden."
     }
   },
   {
@@ -147,10 +147,10 @@
     "dialogue": {
       "name": "Radha",
       "role": "Flower seller",
-      "ml": "പുതിയ പൂക്കളാണ്. മാല കെട്ടാൻ എടുക്കാം.",
-      "en": "Fresh flowers, ready to thread into garlands.",
-      "more_ml": "നല്ല സുഗന്ധമുണ്ട്.",
-      "more_en": "They have a lovely fragrance."
+      "ml": "മുല്ലപ്പൂ വേണമോ? നല്ല മണമുണ്ട്.",
+      "en": "Would you like jasmine? It smells wonderful.",
+      "more_ml": "മലമുകളിലെ ക്ഷേത്രത്തിലേക്കും പൂ കൊണ്ടുപോകാറുണ്ട്.",
+      "more_en": "I take flowers to the hill temple too."
     }
   },
   {
@@ -169,10 +169,10 @@
     "dialogue": {
       "name": "Soman",
       "role": "Coconut seller",
-      "ml": "നല്ല ഇളനീരുണ്ട്. ഒന്നു കുടിച്ചു നോക്കൂ.",
-      "en": "Fresh tender coconuts. Stop for a drink.",
-      "more_ml": "ഈ തെങ്ങുകളിൽ നിന്നുള്ളതാണ്.",
-      "more_en": "They came from these coconut palms."
+      "ml": "കരിക്കിൻ വെള്ളം കുടിച്ചിട്ടു പോകൂ. ക്ഷീണം മാറും.",
+      "en": "Have some tender coconut water before you go. It will refresh you.",
+      "more_ml": "തെങ്ങിൽ കയറാൻ നല്ല പരിചയം വേണം.",
+      "more_en": "It takes practice to climb a coconut tree."
     }
   },
   {
@@ -191,10 +191,10 @@
     "dialogue": {
       "name": "Balan",
       "role": "Paddy farmer",
-      "ml": "നെല്ലിന് നല്ല വെള്ളം കിട്ടി. ഇത്തവണ വിളവ് നന്നായിരിക്കും.",
-      "en": "The rice has enough water. This should be a good harvest.",
-      "more_ml": "വരമ്പിലൂടെ നടക്കൂ. നെൽച്ചെടികൾ ചവിട്ടരുതേ.",
-      "more_en": "Walk along the bunds. Please mind the rice plants."
+      "ml": "വരമ്പിലൂടെ നടന്നോളൂ. ഞാറ് ചവിട്ടരുതേ.",
+      "en": "Walk along the bund. Please do not tread on the seedlings.",
+      "more_ml": "തോടിലെ വെള്ളം തിരിച്ചുവിട്ടാൽ പാടം മുഴുവൻ നനയും.",
+      "more_en": "Divert the stream and the whole field will be watered."
     }
   },
   {
@@ -213,10 +213,10 @@
     "dialogue": {
       "name": "Parvathi",
       "role": "Rice planter",
-      "ml": "നെല്ലിന് നല്ല വെള്ളം കിട്ടി. ഇത്തവണ വിളവ് നന്നായിരിക്കും.",
-      "en": "The rice has enough water. This should be a good harvest.",
-      "more_ml": "വരമ്പിലൂടെ നടക്കൂ. നെൽച്ചെടികൾ ചവിട്ടരുതേ.",
-      "more_en": "Walk along the bunds. Please mind the rice plants."
+      "ml": "ഞാറ് നടുകയാണ്. വരമ്പിൽ നിന്നു നോക്കിക്കോളൂ.",
+      "en": "We are planting rice. You can watch from the bund.",
+      "more_ml": "ഓരോ തൈക്കും ഇടം വേണം. അപ്പോഴാണ് നന്നായി വളരുക.",
+      "more_en": "Every seedling needs space. That is how it grows well."
     }
   },
   {
@@ -235,10 +235,10 @@
     "dialogue": {
       "name": "Appu",
       "role": "Field worker",
-      "ml": "നെല്ലിന് നല്ല വെള്ളം കിട്ടി. ഇത്തവണ വിളവ് നന്നായിരിക്കും.",
-      "en": "The rice has enough water. This should be a good harvest.",
-      "more_ml": "വരമ്പിലൂടെ നടക്കൂ. നെൽച്ചെടികൾ ചവിട്ടരുതേ.",
-      "more_en": "Walk along the bunds. Please mind the rice plants."
+      "ml": "വെള്ളം തുറന്നുവിടാൻ സഹായിക്കാമോ? പാടം വരണ്ടുപോകുന്നു.",
+      "en": "Could you help open the sluice? The field is drying out.",
+      "more_ml": "വൈകുന്നേരം വരെ ഇവിടെ പണിയുണ്ട്.",
+      "more_en": "We have work here until evening."
     }
   },
   {
@@ -270,10 +270,10 @@
     "dialogue": {
       "name": "Sreedevi",
       "role": "Harvest carrier",
-      "ml": "നെല്ലിന് നല്ല വെള്ളം കിട്ടി. ഇത്തവണ വിളവ് നന്നായിരിക്കും.",
-      "en": "The rice has enough water. This should be a good harvest.",
-      "more_ml": "വരമ്പിലൂടെ നടക്കൂ. നെൽച്ചെടികൾ ചവിട്ടരുതേ.",
-      "more_en": "Walk along the bunds. Please mind the rice plants."
+      "ml": "കൊയ്ത നെല്ല് കളപ്പുരയിൽ എത്തിക്കണം. ഒന്നു വഴിതരൂ.",
+      "en": "I must get this harvested rice to the granary. Make some room, please.",
+      "more_ml": "മഴയ്ക്കു മുമ്പ് കറ്റയെല്ലാം അകത്തെത്തണം.",
+      "more_en": "All the sheaves must be inside before the rain."
     }
   },
   {
@@ -305,10 +305,10 @@
     "dialogue": {
       "name": "Chandran",
       "role": "Village porter",
-      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
-      "en": "Namaskaram. The market is busy today.",
-      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
-      "more_en": "Take care on the road."
+      "ml": "ഈ ചുമട് കടവിലെത്തിക്കണം. വഴി ഒന്നു മാറാമോ?",
+      "en": "I must carry this load to the jetty. Could you make way?",
+      "more_ml": "കാണാതായ വഞ്ചിയിൽ എന്റെ കൂട്ടുകാരനുമുണ്ട്.",
+      "more_en": "One of my friends was on the missing boat."
     }
   },
   {
@@ -340,10 +340,10 @@
     "dialogue": {
       "name": "Nabeesa",
       "role": "Market shopper",
-      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
-      "en": "Namaskaram. The market is busy today.",
-      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
-      "more_en": "Take care on the road."
+      "ml": "അരുണേ, മീരയുടെ കട എവിടെയാണ്? ഔഷധം വാങ്ങാനുണ്ട്.",
+      "en": "Arun, where is Meera’s stall? I need healing herbs.",
+      "more_ml": "ചന്തയിലെ തിരക്ക് കണ്ടോ? മഴയ്ക്കു മുമ്പുള്ള വാങ്ങലാണ്.",
+      "more_en": "Have you seen the crowd? Everyone is shopping before the rain."
     }
   },
   {
@@ -375,10 +375,10 @@
     "dialogue": {
       "name": "Krishnan",
       "role": "Basket seller",
-      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
-      "en": "Namaskaram. The market is busy today.",
-      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
-      "more_en": "Take care on the road."
+      "ml": "പുതിയ മുളങ്കൂട വേണമോ? ഉറപ്പുള്ള പണിയാണ്.",
+      "en": "Would you like a new bamboo basket? It is well made.",
+      "more_ml": "ഈ കൂട മെടയാൻ ഒരു ദിവസം മുഴുവൻ വേണം.",
+      "more_en": "It takes a whole day to weave this basket."
     }
   },
   {
@@ -397,10 +397,10 @@
     "dialogue": {
       "name": "Velu",
       "role": "Net mender",
-      "ml": "ഇന്നത്തെ മീനാണ്. കടവിൽ നിന്നു കൊണ്ടുവന്നതാണ്.",
-      "en": "Today's catch, brought straight from the jetty.",
-      "more_ml": "വഞ്ചികൾ ഉടനെ മടങ്ങിവരും.",
-      "more_en": "The boats should return soon."
+      "ml": "വല കീറിയിരിക്കുകയാണ്. തുന്നിത്തീർത്തിട്ട് കടലിൽ പോകണം.",
+      "en": "The net is torn. I must mend it before going to sea.",
+      "more_ml": "കായലിലെ വളവിൽ ചില അന്യരെ കണ്ടിരുന്നു.",
+      "more_en": "I saw some strangers near the bend in the backwater."
     }
   },
   {
@@ -419,10 +419,10 @@
     "dialogue": {
       "name": "Joseph",
       "role": "Fisherman",
-      "ml": "ഇന്നത്തെ മീനാണ്. കടവിൽ നിന്നു കൊണ്ടുവന്നതാണ്.",
-      "en": "Today's catch, brought straight from the jetty.",
-      "more_ml": "വഞ്ചികൾ ഉടനെ മടങ്ങിവരും.",
-      "more_en": "The boats should return soon."
+      "ml": "ഇന്ന് കാറ്റ് മാറുന്നുണ്ട്. കടലിൽ പോകുമ്പോൾ സൂക്ഷിക്കണം.",
+      "en": "The wind is shifting today. Take care if you go to sea.",
+      "more_ml": "വഞ്ചി കാണാതായതിൽ എല്ലാവർക്കും വിഷമമുണ്ട്.",
+      "more_en": "Everyone is worried about the missing boat."
     }
   },
   {
@@ -441,10 +441,10 @@
     "dialogue": {
       "name": "Lakshmi",
       "role": "Village neighbor",
-      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
-      "en": "Namaskaram. The market is busy today.",
-      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
-      "more_en": "Take care on the road."
+      "ml": "അരുണേ, വീട്ടിൽ എല്ലാവർക്കും സുഖമാണോ?",
+      "en": "Arun, is everyone well at home?",
+      "more_ml": "ദേവകിയമ്മ പറഞ്ഞ കഥ കേട്ടോ? ക്ഷേത്രമണിയെപ്പറ്റിയാണ്.",
+      "more_en": "Did you hear Devaki Amma’s story about the temple bell?"
     }
   },
   {
@@ -463,10 +463,10 @@
     "dialogue": {
       "name": "Raman",
       "role": "Village elder",
-      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
-      "en": "Namaskaram. The market is busy today.",
-      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
-      "more_en": "Take care on the road."
+      "ml": "ഈ ആൽമരത്തോളം പഴക്കമുണ്ട് നമ്മുടെ ചില കഥകൾക്ക്.",
+      "en": "Some of our stories are as old as this banyan tree.",
+      "more_ml": "നാടിനെ കാക്കാൻ ധൈര്യം മാത്രം പോരാ. വിവേകവും വേണം.",
+      "more_en": "It takes wisdom as well as courage to protect the village."
     }
   },
   {
@@ -485,10 +485,10 @@
     "dialogue": {
       "name": "Unni",
       "role": "Kalari student",
-      "ml": "ദിവസവും പരിശീലിക്കണം. ചുവട് ഉറപ്പിക്കണം.",
-      "en": "Practice every day. Keep your footing steady.",
-      "more_ml": "ഗുരുക്കൾ മുറ്റത്തുണ്ട്.",
-      "more_en": "The instructor is in the courtyard."
+      "ml": "ഇന്നത്തെ പരിശീലനം കഴിഞ്ഞോ? ഞാൻ ചുവട് പഠിക്കുകയാണ്.",
+      "en": "Finished training today? I am learning the footwork.",
+      "more_ml": "ഗുരുക്കൾ പറഞ്ഞതുപോലെ ശ്വാസം ക്രമപ്പെടുത്തണം.",
+      "more_en": "We must steady our breathing, just as the instructor said."
     }
   },
   {
@@ -507,10 +507,10 @@
     "dialogue": {
       "name": "Gopi",
       "role": "Kalari student",
-      "ml": "ദിവസവും പരിശീലിക്കണം. ചുവട് ഉറപ്പിക്കണം.",
-      "en": "Practice every day. Keep your footing steady.",
-      "more_ml": "ഗുരുക്കൾ മുറ്റത്തുണ്ട്.",
-      "more_en": "The instructor is in the courtyard."
+      "ml": "അരുണേ, നിന്റെ വാൾപ്പയറ്റ് ഒന്നു കാണിച്ചു തരാമോ?",
+      "en": "Arun, could you show me some swordplay?",
+      "more_ml": "പരിച ഉയർത്താൻ വൈകിയാൽ അടി കിട്ടും.",
+      "more_en": "Raise your shield too late and the blow will land."
     }
   },
   {
@@ -542,10 +542,10 @@
     "dialogue": {
       "name": "Kumaran",
       "role": "Hill traveler",
-      "ml": "കാട്ടിലൂടെ പോകുമ്പോൾ വഴിയിൽ തന്നെ നടക്കണം.",
-      "en": "Keep to the trail when you walk through the forest.",
-      "more_ml": "മഴ പെയ്താൽ വഴി വഴുക്കും.",
-      "more_en": "The trail gets slippery in the rain."
+      "ml": "മലയിലേക്കാണോ? കല്ലുപടിയിൽ വഴുക്കലുണ്ട്.",
+      "en": "Going up the hill? The stone steps are slippery.",
+      "more_ml": "ക്ഷേത്രമുറ്റത്ത് വിശ്രമിക്കാം. അവിടെ നല്ല കാറ്റുണ്ട്.",
+      "more_en": "You can rest in the temple courtyard. There is a fine breeze there."
     }
   },
   {
@@ -577,10 +577,10 @@
     "dialogue": {
       "name": "Narayanan",
       "role": "Wood gatherer",
-      "ml": "കാട്ടിലൂടെ പോകുമ്പോൾ വഴിയിൽ തന്നെ നടക്കണം.",
-      "en": "Keep to the trail when you walk through the forest.",
-      "more_ml": "മഴ പെയ്താൽ വഴി വഴുക്കും.",
-      "more_en": "The trail gets slippery in the rain."
+      "ml": "കാട്ടിൽ മുന്നോട്ട് പോകുമ്പോൾ സൂക്ഷിക്കണം. പടയാളികൾ നിൽപ്പുണ്ട്.",
+      "en": "Be careful further into the forest. There are soldiers ahead.",
+      "more_ml": "വിറക് പെറുക്കാൻ വന്നതാണ്. ഇന്നു നേരത്തെ മടങ്ങണം.",
+      "more_en": "I came to gather firewood. I must head back early today."
     }
   },
   {
@@ -612,10 +612,10 @@
     "dialogue": {
       "name": "Mary",
       "role": "Village walker",
-      "ml": "നമസ്കാരം. ഇന്ന് ചന്തയിൽ നല്ല തിരക്കാണ്.",
-      "en": "Namaskaram. The market is busy today.",
-      "more_ml": "വഴിയിൽ സൂക്ഷിച്ചു പോകണം.",
-      "more_en": "Take care on the road."
+      "ml": "നമസ്കാരം, അരുണേ. കടവിലേക്ക് പോകുകയാണോ?",
+      "en": "Hello, Arun. Are you going to the jetty?",
+      "more_ml": "മഴയ്ക്കു മുമ്പ് അയൽവീട്ടിൽ ഒന്നു കയറണം.",
+      "more_en": "I must visit the neighbours before the rain."
     }
   }
 ]

@@ -1,0 +1,12 @@
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M3
+
+HILL TEMPLE · two roof tiers · carved veranda · courtyard · walkable gateway
+SOLDIERS · 12 soldiers · 3 squads · levels 1–3 · Normal
+WORLD LIFE · 468 extra trees · 3024 rice clumps · 13 stalls · 30 friendly NPCs
+WILDLIFE · 4 cats · 3 dogs · 5 deer · 2 elephants
+SOLDIERS · 12 soldiers · 3 squads · levels 1–3 · Normal
+CAPTURE · 40-level-one-scouts · FPS 1 · Draws 1172
+CAPTURE · 41-level-two-patrol · FPS 41 · Draws 1104
+CAPTURE · 42-level-three-guard · FPS 41 · Draws 1184
+SQUAD PORTRAITS COMPLETE

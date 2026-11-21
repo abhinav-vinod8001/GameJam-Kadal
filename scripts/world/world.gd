@@ -7,7 +7,7 @@ var water_reflection: Node
 var landmarks: Array = []
 var enemies: Array = []
 var boat
-var spawn_positions: Array[Vector3] = [Vector3(63,3,-56),Vector3(73,3,-61),Vector3(67,3,-69)]
+var encounters: SoldierEncounters
 var grass: MultiMeshInstance3D
 var path_segments: Array = []
 var building_footprints: Array[Vector4] = []
@@ -377,6 +377,7 @@ func plant_world():
 	add_child(grass)
 
 func grass_excluded(x: float,z: float) -> bool:
+	if SoldierEncounters.contains_site(x,z): return true
 	if x>50 and x<101 and z>36 and z<66: return true
 	for line in path_segments:
 		if Vector2(x,z).distance_to(Geometry2D.get_closest_point_to_segment(Vector2(x,z),line[0],line[1])) < line[2]*.57:
@@ -418,7 +419,7 @@ func forest_and_ruins():
 	stone = stone.duplicate()
 	stone.set_shader_parameter("moss_amount", .78)
 	var edges = Craft.painted(Color("a39d84"),1.8,.32)
-	Craft.box(self,camp+Vector3(0,.12,0),Vector3(16,.24,13),edges)
+	Craft.box(self,camp+Vector3(0,.12,0),Vector3(16,.24,13),edges,true)
 	Craft.box(self,camp+Vector3(0,.025,0),Vector3(16.36,.095,13.34),stone)
 	Craft.box(self,camp+Vector3(0,.18,0),Vector3(16.18,.083,13.17),stone)
 	for i in range(3):
@@ -440,9 +441,26 @@ func forest_and_ruins():
 		for x in range(7):
 			Craft.box(self,camp+Vector3(-6.26+x*2.09,3.79,z),Vector3(2.08,.39,.91),stone)
 		SceneryArt.hanging_vines(self,camp+Vector3(-3.9,3.96,z-.44),1.53)
+	# A four-metre breach lets the whole guard leave the camp together.
 	for i in range(6):
+		if i in [2,3]: continue
 		Craft.box(self,camp+Vector3(-6+i*2,.6,5),Vector3(1.9,1.2,.7),stone,true)
 		Craft.box(self,camp+Vector3(-6+i*2,1.19,5),Vector3(1.95,.13,.82),edges)
+	var entry_low = Vector3(69,height_at(69,-56.8)-.08,-56.8)
+	var entry_top = Vector3(69,camp.y+.26,-60.05)
+	var entry_end = Vector3(69,camp.y+.26,-60.8)
+	var entry_vertices = PackedVector3Array()
+	for pair in [[entry_low,entry_top],[entry_top,entry_end]]:
+		var a: Vector3 = pair[0]
+		var b: Vector3 = pair[1]
+		entry_vertices.append_array(PackedVector3Array([
+			a+Vector3(-1.8,0,0),a+Vector3(1.8,0,0),b+Vector3(-1.8,0,0),
+			a+Vector3(1.8,0,0),b+Vector3(1.8,0,0),b+Vector3(-1.8,0,0)]))
+	var entry = Craft.surface(self,entry_vertices,stone)
+	entry.create_trimesh_collision()
+	for body in entry.get_children():
+		for collider in body.get_children():
+			if collider is CollisionShape3D: collider.shape.backface_collision = true
 	var chest = interactable("ledger","Recover the vanchi ledger",camp+Vector3(0,.55,0))
 	Craft.box(chest,Vector3.ZERO,Vector3(.7,.15,.5),Craft.mat("69452e"))
 	Craft.box(chest,Vector3(0,.09,0),Vector3(.55,.04,.42),Craft.mat("d8c48d"))
@@ -544,15 +562,10 @@ func populate():
 	reset_enemies()
 
 func reset_enemies():
-	for e in enemies:
-		if is_instance_valid(e): e.queue_free()
-	enemies.clear()
-	for i in spawn_positions.size():
-		var e = load("res://scripts/enemies/enemy.gd").new()
-		e.elite = i == 2
-		e.position = spawn_positions[i]
-		add_child(e)
-		enemies.append(e)
+	if not is_instance_valid(encounters):
+		encounters = SoldierEncounters.new()
+		add_child(encounters)
+	encounters.reset()
 
 func coastal_details():
 	var wood = Craft.mat("70533a")

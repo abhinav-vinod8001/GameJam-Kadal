@@ -1,0 +1,690 @@
+{
+  "language": "ml",
+  "provider": "Google Translate speech via gTTS",
+  "clips": {
+    "amma_greet": {
+      "text_sha256": "eb49d7339421730f84f397d59cfe5516ae79a327bc347675582eeda13e1b6305",
+      "audio_sha256": "aa14baf6ab83221362181263f5745100dd1f947f1f452911b5d6d49043a45931",
+      "file": "assets/audio/speech/amma_greet.mp3",
+      "bytes": 29184
+    },
+    "amma_intro": {
+      "text_sha256": "70c801624eb792d19d1506a8e9e06858d22dd8e85d7abfc474251f60308bc146",
+      "audio_sha256": "cb3bd26395f49ae5d43a9830e54ac465255db6cea90b6298ebf58f50b72eb3cf",
+      "file": "assets/audio/speech/amma_intro.mp3",
+      "bytes": 56832
+    },
+    "amma_local": {
+      "text_sha256": "5af94872cc11a1d87400ef0cae9172ba7c374afc832acec561aee3a81a9569ec",
+      "audio_sha256": "3e6bfacbcf73f9c7926c3df286093d80b972a309463e17f618b33732573a8eda",
+      "file": "assets/audio/speech/amma_local.mp3",
+      "bytes": 32448
+    },
+    "amma_more": {
+      "text_sha256": "2fe3fb0332d486982380269a3ca51163c214f4aa0d29dcc4e67962380dd27351",
+      "audio_sha256": "4701b6650e426c184deed273046b6e148affe2c885739d4a3c60f292704d1ef4",
+      "file": "assets/audio/speech/amma_more.mp3",
+      "bytes": 45504
+    },
+    "fish_greet": {
+      "text_sha256": "118098721740243afbd2fb6fbef0c0ccc78317b44d83a7e62c26ac83d03fb9c0",
+      "audio_sha256": "fe4bd0487ebdaf22b81c8f81b328c61b0423844cc51d92e6f1c9dda4a8dd829e",
+      "file": "assets/audio/speech/fish_greet.mp3",
+      "bytes": 28032
+    },
+    "fish_intro": {
+      "text_sha256": "b903749962abf1056d670dc4c645332a2e1d92cfdb69ad7cd920ea59531da256",
+      "audio_sha256": "29e7e7fe9e7c55075d492aa7c23265f5288f37e907728f6f44b6f07a4737d680",
+      "file": "assets/audio/speech/fish_intro.mp3",
+      "bytes": 57408
+    },
+    "fish_local": {
+      "text_sha256": "e823aaf0ce59ae84caee339691b556aacb6598846beb95926a87ba0484370270",
+      "audio_sha256": "9a220ba6ad93d2c2fe0a2fe26d506074a0c5630480cf2f6c742f69a4c6eeed72",
+      "file": "assets/audio/speech/fish_local.mp3",
+      "bytes": 34752
+    },
+    "fish_more": {
+      "text_sha256": "624663a937ad645afe0647f9726d2cae952c51215e7331013f6f8bb2ce52022c",
+      "audio_sha256": "8b1f163fce227be9f2b265951cfe4e8a1b18380e3900cec540120420e3e72842",
+      "file": "assets/audio/speech/fish_more.mp3",
+      "bytes": 37248
+    },
+    "guru_greet": {
+      "text_sha256": "f54bb65af923c395416f04c285c1142ce4338c6f106582f1793a07fb0e6a96c8",
+      "audio_sha256": "916bb03a2fd552e6a108e2d4e2c89a2859712ebc3cc29ee10aafe13a22bda7e2",
+      "file": "assets/audio/speech/guru_greet.mp3",
+      "bytes": 31104
+    },
+    "guru_intro": {
+      "text_sha256": "9ec0749a978a0721ef7036281371f88748cd0bdbc79d2d9a431206870565f98c",
+      "audio_sha256": "9c843c3586c6998c4686f6db4708c54d81eddc0fc657b5a5de26aaf4e99cbcaf",
+      "file": "assets/audio/speech/guru_intro.mp3",
+      "bytes": 61440
+    },
+    "guru_local": {
+      "text_sha256": "0bd9c20b57137385d72b109491b2f21149ecf3c0ba8bcd134586ca7364bc84a0",
+      "audio_sha256": "e3ba73842b934e69b33f11147f12c0fb1073d2a3f0f4c1b40101b78b6b629658",
+      "file": "assets/audio/speech/guru_local.mp3",
+      "bytes": 30528
+    },
+    "guru_more": {
+      "text_sha256": "13ff3db4641b012bf0f7f5c8e942ca8363611e3f6fbc81bfd0b787ec68174f9f",
+      "audio_sha256": "fe506e11f9530bcd5f5d553198951af154f225a835594b2fb0b01e0961fbdd1f",
+      "file": "assets/audio/speech/guru_more.mp3",
+      "bytes": 50304
+    },
+    "life_appu_greet": {
+      "text_sha256": "ebe919f0650864cb72b90500a536781b8bca95d411518701bfcbc28c46e18ea2",
+      "audio_sha256": "ce282e7eee15967474f9ec86af53134112c4806e5538296b5655e2bbfabb518a",
+      "file": "assets/audio/speech/life_appu_greet.mp3",
+      "bytes": 26688
+    },
+    "life_appu_intro": {
+      "text_sha256": "90a623108b1de8cfd7cefa447ba836a7f7db680f72ff8d33f1a7cfc825576feb",
+      "audio_sha256": "f07380e72ac40ee70fc5884460df0c16b0a8fd0e89bb742839bbf3525a9fb3d0",
+      "file": "assets/audio/speech/life_appu_intro.mp3",
+      "bytes": 33024
+    },
+    "life_appu_more": {
+      "text_sha256": "6bc5789138d2f65061b9d773b451be5cc1d4f3891cdc9a106d72e30bc80bb8ff",
+      "audio_sha256": "7c8e88599219505d45ba5d42e5ae3faefab475e1d55c4b115272851c2897e010",
+      "file": "assets/audio/speech/life_appu_more.mp3",
+      "bytes": 18816
+    },
+    "life_balan_greet": {
+      "text_sha256": "81eb277d9644aa9c8f0910ac56a4d097fb33d2e11bba66d3ee9abfe7ef09f6b2",
+      "audio_sha256": "586bdd636b6d746b866ef42e38af423f36fbb5debe6dbd26b64c572b732d0c75",
+      "file": "assets/audio/speech/life_balan_greet.mp3",
+      "bytes": 22464
+    },
+    "life_balan_intro": {
+      "text_sha256": "e2350754c87a125391eccfbb9111279f6e8d5134007b7b74a87fcd951c3bb51e",
+      "audio_sha256": "7d54583367e642cdbf26181da5b8f5b90114a559652d296f42fd34b5701d51bb",
+      "file": "assets/audio/speech/life_balan_intro.mp3",
+      "bytes": 27264
+    },
+    "life_balan_more": {
+      "text_sha256": "f21a23653a3f3286960b79bd8667f84b3afbcf13ae29f144177935e57663b12e",
+      "audio_sha256": "856e76a62ada2b9386397eecf0c3ca47ffafa65ae5ed9c3629f032fca36cee06",
+      "file": "assets/audio/speech/life_balan_more.mp3",
+      "bytes": 28224
+    },
+    "life_chandran_greet": {
+      "text_sha256": "572674501614b348cb152a98f2c7e715a52e7d1b52fb68f1ca684c8e605dfed3",
+      "audio_sha256": "05ec7cb7a889636d0374bdd43ec0b6269c6c588224b9cdaaf5df4f3272b04dfb",
+      "file": "assets/audio/speech/life_chandran_greet.mp3",
+      "bytes": 24384
+    },
+    "life_chandran_intro": {
+      "text_sha256": "7841f1f23cc0197786d3c899de5066de81dc6e6dba28d9471c65d3eb0fe4fd65",
+      "audio_sha256": "8d3be429dfad4f507a19f0f88553e4731a0d829157f8fdce10def2ec83862686",
+      "file": "assets/audio/speech/life_chandran_intro.mp3",
+      "bytes": 28800
+    },
+    "life_chandran_more": {
+      "text_sha256": "32aef0740d137c295a91d6ed6f89621b05c647154e884c042bf6907b153de5ca",
+      "audio_sha256": "296482e15698d8125b35ce0db9ae1a954dd53b592846c10ac5d3eefe9dfb0ff0",
+      "file": "assets/audio/speech/life_chandran_more.mp3",
+      "bytes": 24384
+    },
+    "life_gopi_greet": {
+      "text_sha256": "c7d9751925bd3d466b004f93a58ebd93a3f2d9609113a1792c3c5a754e431700",
+      "audio_sha256": "e3bb15ba3bac3fd73600f381fd959afa17c220b0fe72b2ff9f0681ef93fb5400",
+      "file": "assets/audio/speech/life_gopi_greet.mp3",
+      "bytes": 23232
+    },
+    "life_gopi_intro": {
+      "text_sha256": "83d39394165d62dc36563853c61f2cbf805de257e1008edf1d29551365f5205b",
+      "audio_sha256": "f9f46bbd470212431eb7abca5b37dece1324bb1693db50e6c293bad7bdbdfec5",
+      "file": "assets/audio/speech/life_gopi_intro.mp3",
+      "bytes": 27840
+    },
+    "life_gopi_more": {
+      "text_sha256": "63ae38da400dceb90657420768dd199989a963ce2dd00fe4ba1e8e2c0ccedc4b",
+      "audio_sha256": "931f4d0e585f8e95aab88d00a21160a99e7ebb37784cfe359c4687ebf6ba5f46",
+      "file": "assets/audio/speech/life_gopi_more.mp3",
+      "bytes": 21696
+    },
+    "life_hameed_greet": {
+      "text_sha256": "56991c6fad0fdc3d273c26be492151c41a2213a9a6ac7a59bbaf3230cb31e02d",
+      "audio_sha256": "72848e27b4c951a454cf4df0716a1d93ebb4f22a6d85d94ce32e67f6a199ff74",
+      "file": "assets/audio/speech/life_hameed_greet.mp3",
+      "bytes": 27264
+    },
+    "life_hameed_intro": {
+      "text_sha256": "d434d09baa31ef254395e4900df88cb3f9f010ad077d5745eef1391d2f616d83",
+      "audio_sha256": "d1ae8d6203a1b7845718461178f057a121d5909e82606c3b91e1a39aaf7daa35",
+      "file": "assets/audio/speech/life_hameed_intro.mp3",
+      "bytes": 32064
+    },
+    "life_hameed_more": {
+      "text_sha256": "3791fa2c61f227b5b1ed7f912bedc54eb565cf6a38c6c02690b6acb745f7d299",
+      "audio_sha256": "f67327963c50778393650081e16fa5e5808ea753e4452ccd4d64101a81a2bc22",
+      "file": "assets/audio/speech/life_hameed_more.mp3",
+      "bytes": 35328
+    },
+    "life_janaki_greet": {
+      "text_sha256": "584ad5ee0293b4fe196b1c8434d35898a3005c877c2279974066db28df1fa20b",
+      "audio_sha256": "e8fff4112a0ea90b34324c9b2d13aefa919d2531b08dadc72391e763dca2244e",
+      "file": "assets/audio/speech/life_janaki_greet.mp3",
+      "bytes": 23616
+    },
+    "life_janaki_intro": {
+      "text_sha256": "9ce8cbbac36ca5467ff402a252b0b5ad1bfec4277efbe67080d7bfa3cac0e710",
+      "audio_sha256": "500ca6214d10a07f8fd66276a8926b204572ab36b980209932677b9f113f2965",
+      "file": "assets/audio/speech/life_janaki_intro.mp3",
+      "bytes": 26688
+    },
+    "life_janaki_more": {
+      "text_sha256": "590466377acded4c741721ac280603ec606892981fc7857dcd09538a03bc2f2e",
+      "audio_sha256": "6cb31d254b451c6692943dd969c8b9038105e0de69f7cb0499d07bf7e66ae390",
+      "file": "assets/audio/speech/life_janaki_more.mp3",
+      "bytes": 29760
+    },
+    "life_joseph_greet": {
+      "text_sha256": "a49c8283c933f7cc34dda481236ec58145eb1057c3f4b33fc5c5a0c34931eb18",
+      "audio_sha256": "bf02a8c94303cd7c01a7d801f273ed3f8b44ac013d1799ddf18fce78cdf667c3",
+      "file": "assets/audio/speech/life_joseph_greet.mp3",
+      "bytes": 28608
+    },
+    "life_joseph_intro": {
+      "text_sha256": "44649517f6c34c0c652be3d6ea2ebef8bfa839ac9c3e284e2075881743e0a1b6",
+      "audio_sha256": "00c808f193f9a26186fb7524d959b2586c1335f720c0f899c3d9626298fd69e3",
+      "file": "assets/audio/speech/life_joseph_intro.mp3",
+      "bytes": 32448
+    },
+    "life_joseph_more": {
+      "text_sha256": "013405ccd623e0f57d96b1c731a1a4930c8f4b0beb7c46182ba37502f03abe50",
+      "audio_sha256": "e160bf55f7f12587c1c83f6a324893cacc00bc2080895a1f3df6e0c07b629a50",
+      "file": "assets/audio/speech/life_joseph_more.mp3",
+      "bytes": 24960
+    },
+    "life_krishnan_greet": {
+      "text_sha256": "817cf34b4fb606d7e9b8680beb7882f968967b2adae06c3a32cf0dd182ac47cc",
+      "audio_sha256": "bb23abb8026bd0907b2e965374872885830756ae1b87f287709d4b16f9c181de",
+      "file": "assets/audio/speech/life_krishnan_greet.mp3",
+      "bytes": 26688
+    },
+    "life_krishnan_intro": {
+      "text_sha256": "952376052dcd67df9ebb8fc89204b72feb69c41658d6101ac54e5a0f62ebe818",
+      "audio_sha256": "b0606e910db16322ae4d049afffc95ce3247ffb30a20b7cb78255de2c2fd7a6f",
+      "file": "assets/audio/speech/life_krishnan_intro.mp3",
+      "bytes": 27456
+    },
+    "life_krishnan_more": {
+      "text_sha256": "fe7ac467ee618bc43cba1c5328a3da55df3e1613d1c72c86abcdcb91afd45639",
+      "audio_sha256": "048746550cb35f5e276a7ef51be5efe877bba62e53f794b5af9641bdb76b80b8",
+      "file": "assets/audio/speech/life_krishnan_more.mp3",
+      "bytes": 24576
+    },
+    "life_kumaran_greet": {
+      "text_sha256": "0e70779ba7f891da06f61d3b5b25168af395dc47eb8f9b9f1c3f815c7a8912bd",
+      "audio_sha256": "83cb763e71e779ad371be88030d612d89cba04bb0ac197c4281957ffad978a6e",
+      "file": "assets/audio/speech/life_kumaran_greet.mp3",
+      "bytes": 23808
+    },
+    "life_kumaran_intro": {
+      "text_sha256": "8d49d24eb7a414da380756352259718066e509a97c13ae23a401a1ff64f5c5bb",
+      "audio_sha256": "bf3a2bed6c55b2618dbf0f3306c73dd1c4f36571346b5e30797b02960fcdf3a4",
+      "file": "assets/audio/speech/life_kumaran_intro.mp3",
+      "bytes": 27072
+    },
+    "life_kumaran_more": {
+      "text_sha256": "1aad9c1bdf532466d80d40d4ed2d63b70a09f27637f0b70fc75bad1091228ab8",
+      "audio_sha256": "1486cdec0fd8d8ebbff88a79a2bcf2cf6348ccd7921a495c27101f76fdc67987",
+      "file": "assets/audio/speech/life_kumaran_more.mp3",
+      "bytes": 30720
+    },
+    "life_lakshmi_greet": {
+      "text_sha256": "a8d3f1f49eaf987cecd7e99bb16d44f6b47573d35dd41996e579f26650da17ae",
+      "audio_sha256": "95cd083e9cd70929f8e93e1d1808fd0aab2327d6c5fd6606ce6f9d8458d08f0c",
+      "file": "assets/audio/speech/life_lakshmi_greet.mp3",
+      "bytes": 30912
+    },
+    "life_lakshmi_intro": {
+      "text_sha256": "0af5ef66dd6c78c3331bcea9cd0f3dec49e7e955ea76b4559d7f0d1123f39a12",
+      "audio_sha256": "45e8fccc1a6f73f58b9aafd613222381dbf4b576a471eb1698456589031c70f9",
+      "file": "assets/audio/speech/life_lakshmi_intro.mp3",
+      "bytes": 24000
+    },
+    "life_lakshmi_more": {
+      "text_sha256": "ae580bcceafb422151e49b4895c44072359d29b3e99db50a009cc2146d93e2f6",
+      "audio_sha256": "581ff05b92a1b49c863cabe355695f447dbc13b71a529503a6b96f3593db6aa4",
+      "file": "assets/audio/speech/life_lakshmi_more.mp3",
+      "bytes": 33600
+    },
+    "life_leela_greet": {
+      "text_sha256": "a5d15715ab3c4411cadd94f9d81f56f1328b7b90a42184f10382144aad9b4eb3",
+      "audio_sha256": "f91410971bce1881006c2e3f992d52f6c3172bb7a71f2b009a67c92fdfd71275",
+      "file": "assets/audio/speech/life_leela_greet.mp3",
+      "bytes": 28032
+    },
+    "life_leela_intro": {
+      "text_sha256": "5aa3036fa9fb1ee59b11630e1e7d8d1c998d35c2370ec9f97c6aef3883b7a324",
+      "audio_sha256": "c85a41ad689c0c667d1d916488e39513466a09e65b7bc05c59422988db205625",
+      "file": "assets/audio/speech/life_leela_intro.mp3",
+      "bytes": 30336
+    },
+    "life_leela_more": {
+      "text_sha256": "9b3c1285b29915904993a6be8bfb669d73a0f6eb749b79d282f35539301b5594",
+      "audio_sha256": "95c25e01c2e8fcb4077d50b6e9b00e2c89ef9362a8fd15924a8040670eb6836d",
+      "file": "assets/audio/speech/life_leela_more.mp3",
+      "bytes": 27072
+    },
+    "life_madhavan_greet": {
+      "text_sha256": "370e2a66ad27f96ce94cbfe4786c4fce75bfd598b18b2cf6f4ababb2af013a42",
+      "audio_sha256": "664faff2e06d1b5c7c0dc1834c580f0443710b5c96568c36383cc57485a0df27",
+      "file": "assets/audio/speech/life_madhavan_greet.mp3",
+      "bytes": 31872
+    },
+    "life_madhavan_intro": {
+      "text_sha256": "1651887107dfabe0c32b1a968de34b5b1c8a66cb79dd6c4b6f7eea31d6b3674a",
+      "audio_sha256": "03acf824fe3fbf0bd129bc601359dfa4711148584e03f9e0ea8c121b42a6a72d",
+      "file": "assets/audio/speech/life_madhavan_intro.mp3",
+      "bytes": 32640
+    },
+    "life_madhavan_more": {
+      "text_sha256": "24023439e7d038e8fd059404d10dbce99a30733edcb4a62e2101a03f6bcaadeb",
+      "audio_sha256": "ce6f9d37953d094cd1d48bc1c7af63756585e2155a163af95fd543f506886158",
+      "file": "assets/audio/speech/life_madhavan_more.mp3",
+      "bytes": 24768
+    },
+    "life_mani_greet": {
+      "text_sha256": "c414c2ee1f172884e26abf5ae804ed61969dfa755f5f2d420ad9f62509cf301e",
+      "audio_sha256": "77d8f13a106e21dd554c5bea40c71c52ac5bda1db20bff0870236bd23057f13e",
+      "file": "assets/audio/speech/life_mani_greet.mp3",
+      "bytes": 25344
+    },
+    "life_mani_intro": {
+      "text_sha256": "c94e95d68088040d2af8769ec8f396a5de9f9348958a2471c85a9c6f09b54805",
+      "audio_sha256": "78685c3536232ec84f59a42c3eacc9bc8d4340f7e5d7fb5a5cd952d82fbb3077",
+      "file": "assets/audio/speech/life_mani_intro.mp3",
+      "bytes": 28992
+    },
+    "life_mani_more": {
+      "text_sha256": "45ed82ac1c156dccaca88ad939b7e1f841d8163cf36a2a0290cf55eb664e427b",
+      "audio_sha256": "5b8a9e82f4f855a20587b46bdf12577af0c7792fbc90dcd1ca3025aa1064727c",
+      "file": "assets/audio/speech/life_mani_more.mp3",
+      "bytes": 22656
+    },
+    "life_mary_greet": {
+      "text_sha256": "998c945935e0df2db6c6943d99734a5c3034f28735f8c40250b3389c97415057",
+      "audio_sha256": "cb0d24eecc7a5bdd7302850940c2a8c803c4ad12e59606f8e16a356fab6b2d3c",
+      "file": "assets/audio/speech/life_mary_greet.mp3",
+      "bytes": 28608
+    },
+    "life_mary_intro": {
+      "text_sha256": "9613603b46d10e0f76bab42d8534803675f39e65265777828accc0ac84e5e873",
+      "audio_sha256": "cbeb2bf32d2b84a4ee68f8ed3ff97788959d6ed9e7fab778cf23b4fb0ed8ac61",
+      "file": "assets/audio/speech/life_mary_intro.mp3",
+      "bytes": 29184
+    },
+    "life_mary_more": {
+      "text_sha256": "e454f3b14b79cd619bda3efdd4bb6f6df20fa9a18bd702a7ccd1122a457a7f2c",
+      "audio_sha256": "885bca33cd194bb0092704336d8a812129949eb6d986dd456d2c00797695944e",
+      "file": "assets/audio/speech/life_mary_more.mp3",
+      "bytes": 22656
+    },
+    "life_nabeesa_greet": {
+      "text_sha256": "1393b38c5b9f06371d7c29edfd791d36dbe81d6dc75978d0e22cdf0158da9793",
+      "audio_sha256": "37eabbca16cae86afb9d30e0def7d1c8b68d20ed8c069647293d29d8a9d347d6",
+      "file": "assets/audio/speech/life_nabeesa_greet.mp3",
+      "bytes": 30720
+    },
+    "life_nabeesa_intro": {
+      "text_sha256": "2f50a7edad143ccc64f083db16fca7ea30ccb874f406e8229441ff62899d2ac5",
+      "audio_sha256": "7a8f2d0e5c5063950a618e864da270b91fd2152b5b6c3451793cf744ccd16630",
+      "file": "assets/audio/speech/life_nabeesa_intro.mp3",
+      "bytes": 35136
+    },
+    "life_nabeesa_more": {
+      "text_sha256": "df90719ab288237d4cdebb7e975696763073a42e0b9ff334a78448cbcc0b3812",
+      "audio_sha256": "c00aff87de3795133bc9471c7898ca1bc0d9b54cd1e520a3912db17e0a0b5287",
+      "file": "assets/audio/speech/life_nabeesa_more.mp3",
+      "bytes": 31104
+    },
+    "life_narayanan_greet": {
+      "text_sha256": "215c8ff8bbd10652c94df55567721f31798c05444761899059be250ebbe58318",
+      "audio_sha256": "cf310114c243d616558dc95a907cb3c2cfda7f62b45a865355a60e4daf59ca50",
+      "file": "assets/audio/speech/life_narayanan_greet.mp3",
+      "bytes": 30144
+    },
+    "life_narayanan_intro": {
+      "text_sha256": "c08851dad358434082c19b15c39c4df402309fe2770caa9d5f8736c8ff69c6ac",
+      "audio_sha256": "7f62eb08c1c4e7bdd234ef27fd8a060ed7c4bbe41d4681a2aa6c84d3b9f818ef",
+      "file": "assets/audio/speech/life_narayanan_intro.mp3",
+      "bytes": 35328
+    },
+    "life_narayanan_more": {
+      "text_sha256": "394bf0035321e96c6e814755f03b6c1e914f2beb1401b8c794b4042a334681a2",
+      "audio_sha256": "6cd1eeabf97fc59e48a181f18f615809d2ba20c0f82cca949023ab5502151c85",
+      "file": "assets/audio/speech/life_narayanan_more.mp3",
+      "bytes": 29568
+    },
+    "life_parvathi_greet": {
+      "text_sha256": "0783942df37550f03c868f12d9c97b1f85bd4894321a3836bff9f76504f953f6",
+      "audio_sha256": "d881bd29956e0f24ed3a9349e2ec0c05aca022c74fe4b4c3bad3b0549e833472",
+      "file": "assets/audio/speech/life_parvathi_greet.mp3",
+      "bytes": 18624
+    },
+    "life_parvathi_intro": {
+      "text_sha256": "c9f2b93f5a0cfe36f1c2ce0226183030a29b9ae2f42876bf2c96e469e1e04aa9",
+      "audio_sha256": "e338fde76f578136306afc5390b7d4f4b2dfc033dd91d8436f174139ba3f75f7",
+      "file": "assets/audio/speech/life_parvathi_intro.mp3",
+      "bytes": 28032
+    },
+    "life_parvathi_more": {
+      "text_sha256": "f25b17454b5e224441c53c51437ce5425d72c143d3dd189b6d2766f3d584c7f2",
+      "audio_sha256": "e7f66c0b2638386c4a14f3a7ef07d9c106dd13f66277c01263fad1e1712de13a",
+      "file": "assets/audio/speech/life_parvathi_more.mp3",
+      "bytes": 31488
+    },
+    "life_radha_greet": {
+      "text_sha256": "36503aab1dc62a83134149cfcd71e2c21a1adb6996e0edcaad3f458e92d517b3",
+      "audio_sha256": "a5f82cd357e1b594b79107097b39122d6f8626c3436f84cb7544db352234fa92",
+      "file": "assets/audio/speech/life_radha_greet.mp3",
+      "bytes": 23616
+    },
+    "life_radha_intro": {
+      "text_sha256": "70cc5f416ce6d830cdcf870231d4e3ab2231e6f9a54e448d8ea8e14f2863b1df",
+      "audio_sha256": "01f57e715c865272b6c689326a91e0fe61a1510aeaa191679259f74e5e4f5b75",
+      "file": "assets/audio/speech/life_radha_intro.mp3",
+      "bytes": 23040
+    },
+    "life_radha_more": {
+      "text_sha256": "d456ee1cabd8671c57d92a63a11c4cdb15b5894c3ed2636812546ed9b1a919e9",
+      "audio_sha256": "773c1f36dda025822aae28b32600a9084b41f8ad5270e64d8a6b8787fe144b5a",
+      "file": "assets/audio/speech/life_radha_more.mp3",
+      "bytes": 28032
+    },
+    "life_raman_greet": {
+      "text_sha256": "e950a6a8698a756461780cb52bbedb5dfd4a70fa30576869ce5a3a8726871050",
+      "audio_sha256": "f1abe51f5ac36916421205efa9d4175a9bb9351886cfd1651c48be35d97dc2b3",
+      "file": "assets/audio/speech/life_raman_greet.mp3",
+      "bytes": 27456
+    },
+    "life_raman_intro": {
+      "text_sha256": "f804710548033c4d2fa7bbd10f007ea779a03b97710a3ad4f93bd57cc477361c",
+      "audio_sha256": "004187b7bdf6eaea93599f83e437fbc078687261c506fecafd4c1f221ffd601f",
+      "file": "assets/audio/speech/life_raman_intro.mp3",
+      "bytes": 29184
+    },
+    "life_raman_more": {
+      "text_sha256": "b0d76b6b11cddcbfd16287b05c89cd5a78eb642371bd588722b630945769fd0e",
+      "audio_sha256": "8a7798cf2422866009258ef4145e6567dacb359bcc8c98c6c434a55520329844",
+      "file": "assets/audio/speech/life_raman_more.mp3",
+      "bytes": 34368
+    },
+    "life_safiya_greet": {
+      "text_sha256": "bc8df896ad97adfe628e5f2215b8eb766d4e6e583340413bb8d989d34c5c8280",
+      "audio_sha256": "ecd940c3c1fc6d5d6f25138c7b49fb88afcefe113b04f7626c92e3809adb8dbe",
+      "file": "assets/audio/speech/life_safiya_greet.mp3",
+      "bytes": 26880
+    },
+    "life_safiya_intro": {
+      "text_sha256": "32e9fdd4077ea0ebf75cf1a16e385b383c0ff7ee2b910984f3aa778585e7ed5c",
+      "audio_sha256": "e3575473f32b1afcde10cc128c15b55658befc9e0baf77a2748a66946a014b29",
+      "file": "assets/audio/speech/life_safiya_intro.mp3",
+      "bytes": 28608
+    },
+    "life_safiya_more": {
+      "text_sha256": "979dbb8b2d41d0bf8ee7cf0045d41d6d7818c18e19d8746cb99dc339f7f49c00",
+      "audio_sha256": "762b0e424bcfddcf06772c8aff34592e89c602bde9ee5d2c0217a56df96465a5",
+      "file": "assets/audio/speech/life_safiya_more.mp3",
+      "bytes": 23040
+    },
+    "life_soman_greet": {
+      "text_sha256": "4276015329d78863e51f6f9c5947539e4b75c93bcd0a7a02922382601ca656be",
+      "audio_sha256": "e286a5f67a51c01c632f5d0b5c8f20d0408d1c7f455b25fdced89ede0123ac49",
+      "file": "assets/audio/speech/life_soman_greet.mp3",
+      "bytes": 26688
+    },
+    "life_soman_intro": {
+      "text_sha256": "355c7a8e3148bad935ad5cd82b20380a39717d152e6f1ec4e7c8be5a3625d2f6",
+      "audio_sha256": "29f12c51087f638ffdde23e227811938b215193cdd1d50705d0c87ad880c4a61",
+      "file": "assets/audio/speech/life_soman_intro.mp3",
+      "bytes": 28608
+    },
+    "life_soman_more": {
+      "text_sha256": "4805a317b9fbd065907cdd3994ce5b317901ab67c1b1dcffbda9712750b488de",
+      "audio_sha256": "1ba1b4da25fde43cf467236bb555c8ebc8b69c53f6ae870c15c1de7096cfeaf7",
+      "file": "assets/audio/speech/life_soman_more.mp3",
+      "bytes": 21696
+    },
+    "life_sreedevi_greet": {
+      "text_sha256": "c705af44bb3eed23cfb77c107475273a11a3db7ad345bf3d2ed3b79ea92d86b1",
+      "audio_sha256": "f6b980eded5160c2576b4f1823256427e6f773581988734fe5a7442ae722d1b7",
+      "file": "assets/audio/speech/life_sreedevi_greet.mp3",
+      "bytes": 33600
+    },
+    "life_sreedevi_intro": {
+      "text_sha256": "0a69c90e534a90588942fcb732c6d6418d5f7fc23d108bbdc106cd17e43da22d",
+      "audio_sha256": "47f7ed34564e696f127738db841a9074e1a262617e66d935fa56fc1e976b2186",
+      "file": "assets/audio/speech/life_sreedevi_intro.mp3",
+      "bytes": 29376
+    },
+    "life_sreedevi_more": {
+      "text_sha256": "03ada6b11e1d4c3267bb13ad039d7666f4d8cf1f1d7872102d3ba12d25c146e9",
+      "audio_sha256": "a2e12d1d6afb435383e79175bd4e08576687884b8bda95d988747bc70f7d7fd6",
+      "file": "assets/audio/speech/life_sreedevi_more.mp3",
+      "bytes": 21312
+    },
+    "life_unni_greet": {
+      "text_sha256": "1a6e611c02dd60fafb96f808e8120b1c09d1e01f1b3ca35ae786416a807fe5e8",
+      "audio_sha256": "8bb1204ea19a9c12c0ffad1bcc48eff7d97978f7052d85b24b65c6ea8eb2232e",
+      "file": "assets/audio/speech/life_unni_greet.mp3",
+      "bytes": 20160
+    },
+    "life_unni_intro": {
+      "text_sha256": "a8d0468fddba4c7e7ac4c52965f90490bd456e811c120aaf5b886e42cbce39ee",
+      "audio_sha256": "29830da1a33b9768affc61a830bbc39a65e21347e373bfd48391894b5a7ebd87",
+      "file": "assets/audio/speech/life_unni_intro.mp3",
+      "bytes": 31680
+    },
+    "life_unni_more": {
+      "text_sha256": "e4a3ccf2b8a3bf83e7e150cd4cff10509e948358178e9136f33a68b7e1be12f0",
+      "audio_sha256": "eb18934465202defbc650219554a0123b7cea584cc2bd26e0da51f3187b0a89b",
+      "file": "assets/audio/speech/life_unni_more.mp3",
+      "bytes": 25536
+    },
+    "life_velu_greet": {
+      "text_sha256": "925ea0737588d1fa3ad04595ef2a9cbf7f7e682439109f6080ab278fe5a77fef",
+      "audio_sha256": "881c683006a9443921682fd65b2aa834073d9973e066deee9b4f6a180f170d09",
+      "file": "assets/audio/speech/life_velu_greet.mp3",
+      "bytes": 26112
+    },
+    "life_velu_intro": {
+      "text_sha256": "12fd5fa1087bd1ea65b0cf0e9610d042eb5815f418006d2519c483fbee06ff4c",
+      "audio_sha256": "b05c04348e13414180c815e43a2485503620605f3b7c8df86cb66d9cbc6e27f5",
+      "file": "assets/audio/speech/life_velu_intro.mp3",
+      "bytes": 33024
+    },
+    "life_velu_more": {
+      "text_sha256": "60d5657c744b1afdf68794d69f1ac0c8cede93c5d070f96c03b38b0963aa6c3c",
+      "audio_sha256": "59389a3f10fe90127eceffd0439ed76c777cb2d94c8b481ad41acff810f8f609",
+      "file": "assets/audio/speech/life_velu_more.mp3",
+      "bytes": 23616
+    },
+    "meera_greet": {
+      "text_sha256": "93e60b7aa81933adb11cac2b2c8921844b590c0ed71506d8ebc66b1df62e4ee5",
+      "audio_sha256": "d1cbe500ae1214b90fba3161354cb40484617c684547788388a7567f0544534b",
+      "file": "assets/audio/speech/meera_greet.mp3",
+      "bytes": 27840
+    },
+    "meera_intro": {
+      "text_sha256": "fa674534a3c81b4afdd9fce303f2e6ca64db6fe7fcea5a7914e56d8cc54fe368",
+      "audio_sha256": "4db890d83ad984dd9ef576f47a7190e1cc28df1be03917df5dd343e8546fc25d",
+      "file": "assets/audio/speech/meera_intro.mp3",
+      "bytes": 65856
+    },
+    "meera_local": {
+      "text_sha256": "14c07b2f64814466cd8b4a1583553d704e170e52963e761ec22bcc06635d6199",
+      "audio_sha256": "6e5485bb1c118d4eef3cf280317a211da115d112ca4e448b9453c0ca1b72f68e",
+      "file": "assets/audio/speech/meera_local.mp3",
+      "bytes": 32448
+    },
+    "meera_more": {
+      "text_sha256": "1a7a643d683f599e40b3c68106aa9103c2b071952ff20368bb285c00565c0550",
+      "audio_sha256": "124ee347e0755b81b49c1850138cab1e92a8f20f0b4d41cce7da705a601f3faf",
+      "file": "assets/audio/speech/meera_more.mp3",
+      "bytes": 57600
+    },
+    "quest_ravi_return_1": {
+      "text_sha256": "acebf2b90ace8a76efb14993f233303c197f2010ec6a77e0700d9e65d3e81c6b",
+      "audio_sha256": "357819693c0d4bcdc425857fc9f935cda8ed3b75c12ee24d738b60c1057a28ff",
+      "file": "assets/audio/speech/quest_ravi_return_1.mp3",
+      "bytes": 30336
+    },
+    "quest_victory_1": {
+      "text_sha256": "e53512819a31ee4547d252ab5ceff80e234e6ac94d692ae9d25f1435ab226431",
+      "audio_sha256": "95728240d068045aac52532dda3d08074bf85dceea4e7981ddcae625eb522a3e",
+      "file": "assets/audio/speech/quest_victory_1.mp3",
+      "bytes": 28800
+    },
+    "ravi_greet": {
+      "text_sha256": "663325e87e25196232f189f3c6b2249f4eb405354736cd150e2892b04a437c19",
+      "audio_sha256": "206919e8d4a957de2a945f1345b63572fd52bd83e66480410f42e8bc67f3e593",
+      "file": "assets/audio/speech/ravi_greet.mp3",
+      "bytes": 31104
+    },
+    "ravi_intro": {
+      "text_sha256": "d50c87b6ad7347d3731f7db71b1682d16188911c4f2f04ed14a6f874e6649b1e",
+      "audio_sha256": "7a9db7ac21024daf51a98b8b89f4a73bae8b6bfb9351334e14d1a22b990008cc",
+      "file": "assets/audio/speech/ravi_intro.mp3",
+      "bytes": 51840
+    },
+    "ravi_local": {
+      "text_sha256": "a482b8f72cef8626ed1c1e37054876a56d0f194f4e72108382c5fb07a38afaed",
+      "audio_sha256": "d459d9e76247028880e5271dffb7ce0377db696d6253b136f4c0555a8c2ad740",
+      "file": "assets/audio/speech/ravi_local.mp3",
+      "bytes": 34752
+    },
+    "ravi_more": {
+      "text_sha256": "b09f5ad2d392ca95c0745e9884ee51b80ece1889ddacc598a8be363462e2fbdd",
+      "audio_sha256": "06b9b349cc484c969b008de6e8bb78213b252c72a44876a235f48e0cf1be916b",
+      "file": "assets/audio/speech/ravi_more.mp3",
+      "bytes": 48000
+    },
+    "smith_greet": {
+      "text_sha256": "c4f5dac8dd3c75ec1502a85bb232841844583e9ddf990e9b3fc954ddede4d55c",
+      "audio_sha256": "0531dd3f75aac3dedbff68453fee55f6f5c4fce87cd4ee95810c93250264a0ba",
+      "file": "assets/audio/speech/smith_greet.mp3",
+      "bytes": 35328
+    },
+    "smith_intro": {
+      "text_sha256": "296ad6b5af8cfa1224bef35aa33514e8289b070104db3eafee3e112580c050df",
+      "audio_sha256": "8b1001706b9228c2d76b27cf346cc08b791eeb99f65bc90d3cd079456515c938",
+      "file": "assets/audio/speech/smith_intro.mp3",
+      "bytes": 61056
+    },
+    "smith_local": {
+      "text_sha256": "ae2061ef87f8e6404853ad460efc95294afb9f5d2a721f94a9d13ab8bfaa7774",
+      "audio_sha256": "3b973f5a23baf5c334537fe06ab38bf5198668be5898159cee5664a80fe69ba2",
+      "file": "assets/audio/speech/smith_local.mp3",
+      "bytes": 33408
+    },
+    "smith_more": {
+      "text_sha256": "2a2ee928094e1577ff21380f03504bb553463e28db1d021176253dbc0541f62f",
+      "audio_sha256": "5a4da092da612eb31fbc00e21d18338dce8d9068b0c330c07bc7c3beb8e52fc6",
+      "file": "assets/audio/speech/smith_more.mp3",
+      "bytes": 35328
+    },
+    "soldier_alert_1": {
+      "text_sha256": "d28b489fd4b047191b39111ace8f9646c662920a9605107652d6bdc97ac0e5bf",
+      "audio_sha256": "f2105b73ff360d6c5c8030a18573b5295212cb3d0a038746248c97ce3d3f0528",
+      "file": "assets/audio/speech/soldier_alert_1.mp3",
+      "bytes": 19584
+    },
+    "soldier_alert_2": {
+      "text_sha256": "ac6a1e09973ca26a0c2cc453ef393fd2a57d340c2e2631bbc5fa57f9401cf0f5",
+      "audio_sha256": "91df42e0d54eaa6947b06e630760e98c150c6337db5d0e5f9dc8969d8e2c0dba",
+      "file": "assets/audio/speech/soldier_alert_2.mp3",
+      "bytes": 19776
+    },
+    "soldier_alert_3": {
+      "text_sha256": "1bfb3acb57bf11cc126f88b92acb2132b8be6d9ce5aa9d5a874949e646d7d80e",
+      "audio_sha256": "0471cb3468272c225c7f6adf994ab4d8fdaee7eda752b0f01aa87a8e00e3c3e7",
+      "file": "assets/audio/speech/soldier_alert_3.mp3",
+      "bytes": 19776
+    },
+    "soldier_captain_1": {
+      "text_sha256": "7232b02531288e78c7dd98a6260112095d3389267f065890c93feb3523e05ff5",
+      "audio_sha256": "41d28caf2c66c8d5d427b0c8a11bb237edcea6b11f1e24cb99419ddf0c5bc365",
+      "file": "assets/audio/speech/soldier_captain_1.mp3",
+      "bytes": 21312
+    },
+    "soldier_captain_2": {
+      "text_sha256": "853304b17ed2b2ca063034c7d969bc99196f70c0fa2087d18f74569b7c994900",
+      "audio_sha256": "6d344a75f85eabd594f75c415348e1e98c28812c51ad8efc4d7b8fbea47c3d4b",
+      "file": "assets/audio/speech/soldier_captain_2.mp3",
+      "bytes": 25728
+    },
+    "soldier_captain_3": {
+      "text_sha256": "00ddc06f3e4c8ca88bc3848717d82043c0db1e3526deeb6de789d3d89f7179a7",
+      "audio_sha256": "97ab5f875aeb4fec91da28f185639a77d607b76160e9a8370c2912e0b8487f2d",
+      "file": "assets/audio/speech/soldier_captain_3.mp3",
+      "bytes": 20352
+    },
+    "soldier_combat_1": {
+      "text_sha256": "665574242d67f54d5eddf6ebd8a7decdde565e390cb8fb4355a65daadc9337e5",
+      "audio_sha256": "e27d70569e74cd79d2311864f52b12ca5c56877116b778aef29b73aa729e7f34",
+      "file": "assets/audio/speech/soldier_combat_1.mp3",
+      "bytes": 21120
+    },
+    "soldier_combat_2": {
+      "text_sha256": "d3c2e48330ad465ff572615d365a078b1dfb9477b6e96337c4eb2aa598a38bdb",
+      "audio_sha256": "54f5439cc465ecb3faf35f14fd9e532681cb399713196c76ff2a86990c9229d8",
+      "file": "assets/audio/speech/soldier_combat_2.mp3",
+      "bytes": 22656
+    },
+    "soldier_combat_3": {
+      "text_sha256": "b000cb722a6f7ab56c936ba734251cfc61060009aa28ac5619bc29085953105e",
+      "audio_sha256": "30020435c0d920129a93cee72548c3cd6b1faa66ab5dfca7398bff7848a20cc6",
+      "file": "assets/audio/speech/soldier_combat_3.mp3",
+      "bytes": 22272
+    },
+    "soldier_combat_4": {
+      "text_sha256": "f8e1cea318324f1cc006ef86b1a5aaee8092d82055b00fe75926bffa271cfebc",
+      "audio_sha256": "a79642a7cb288f583ef6a7ceb19d0e491b2dda110063f6a17df147f1417b2573",
+      "file": "assets/audio/speech/soldier_combat_4.mp3",
+      "bytes": 22080
+    },
+    "soldier_return_1": {
+      "text_sha256": "681abb84a1dee9e0c335e640bba0410eec2caeb4576626e6d4459e6a834e235f",
+      "audio_sha256": "b588dbe917aa0d34f42a29c61e3d70e614e355ef040e406ff1baac45b2a68a5c",
+      "file": "assets/audio/speech/soldier_return_1.mp3",
+      "bytes": 26688
+    },
+    "soldier_return_2": {
+      "text_sha256": "6c8dd54de6e006ef819ce731649a74f5725453f939af95ac3ca7636ec60bb444",
+      "audio_sha256": "0bdf3cfd4ecbf7e977c6bf95a2918152fd62b44b8f24017000ef8b5ef8e0ecee",
+      "file": "assets/audio/speech/soldier_return_2.mp3",
+      "bytes": 22848
+    },
+    "weather_rain_1": {
+      "text_sha256": "e392cdcd9feca4d56040caa36c72475677d62d20d83d057a35c88ab467df1b59",
+      "audio_sha256": "30e351d24efe5df49d8f898a8d4814d8865f9b1f8babb1a68a6549561f05bab1",
+      "file": "assets/audio/speech/weather_rain_1.mp3",
+      "bytes": 29376
+    },
+    "weather_rain_2": {
+      "text_sha256": "320f01ab595bac8e6f1e62817d55938eed43307f868d28ab621d02c7eeaf91cf",
+      "audio_sha256": "2624ddd2744eb0040fb077065c1f246f7cc3b792e667066a5afa03de0579a156",
+      "file": "assets/audio/speech/weather_rain_2.mp3",
+      "bytes": 29184
+    },
+    "weather_storm_1": {
+      "text_sha256": "1ad4bc527e27c18bec25a9a407e1b009f2530f6b244f54606846c185ccc38008",
+      "audio_sha256": "7182490163c51b33a5c9a586a3dc20f94aee8492f1a6c8961e7602430496789f",
+      "file": "assets/audio/speech/weather_storm_1.mp3",
+      "bytes": 29184
+    },
+    "weather_storm_2": {
+      "text_sha256": "a7b1f7d5ba85f3a0c7aa4e07b414dcc7dcac128b0d2ff74bdce45b6ea98567c4",
+      "audio_sha256": "d13a7e96ecd61d5c91eb1126399608c4eef543848bb37f3f7bb55faa53a0c8db",
+      "file": "assets/audio/speech/weather_storm_2.mp3",
+      "bytes": 27264
+    }
+  }
+}

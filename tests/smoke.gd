@@ -16,6 +16,7 @@ func find_interaction(kind: String, id: String = "") -> Node3D:
 	return null
 
 func _ready():
+	Game.set_difficulty(1,false)
 	await get_tree().process_frame
 	check(Game.mode=="menu","Main menu starts with shared world")
 	check(Game.world.get_child_count()>100,"World generated with terrain and populated environment")
@@ -30,6 +31,17 @@ func _ready():
 	check(species=={"cat":4,"dog":3,"deer":5,"elephant":2},"Fourteen animals cover village pets, deer and elephants")
 	check(Game.world.hill_temple.floor_y>Malanadu.height_at(-79,-80),"Temple courtyard sits above the hill terrain")
 	check(find_interaction("shrine")!=null,"Redesigned temple preserves the shrine interaction")
+	check(Game.world.enemies.size()==12 and Game.world.encounters.squads.size()==3,"Twelve soldiers form three escalating squads")
+	check(Game.world.encounters.living("scouts")==3 and Game.world.encounters.living("patrol")==4 and Game.world.encounters.living("camp")==5,"Scout, patrol and camp squads contain three, four and five soldiers")
+	var recruit = Game.world.enemies[0]
+	var captain = Game.world.enemies[-1]
+	check(recruit.level==1 and captain.level==3 and captain.elite and captain.damage>recruit.damage and captain.max_health>recruit.max_health,"Higher-level captain has stronger health and damage")
+	var base_damage = recruit.damage
+	recruit.health = recruit.max_health*.5
+	Game.set_difficulty(2,false)
+	check(recruit.damage>base_damage and is_equal_approx(recruit.health/recruit.max_health,.5),"Hard difficulty scales stats without healing injured soldiers")
+	Game.set_difficulty(1,false)
+	recruit.health = recruit.max_health
 	check(Game.ui.malayalam.has_char(0x0d15),"Bundled font contains Malayalam glyphs")
 	Game.app.start_game("roam")
 	await get_tree().physics_frame
@@ -113,10 +125,18 @@ func _ready():
 	Game.app.interact(find_interaction("clue"))
 	Game.ui.close_modal()
 	check(Game.quest_step==3,"NPC and clue interactions advance investigation")
+	for e in Game.world.encounters.squads.scouts.members:
+		e.set_physics_process(false)
+		e.take_hit(999,Game.player,true)
+	Game.app.interact(find_interaction("ledger"))
+	check(Game.defeated==3 and Game.quest_step==3 and not Game.camp_cleared(),"Defeating three scouts cannot unlock the guarded ledger")
 	for e in Game.world.enemies:
 		e.set_physics_process(false)
 		e.take_hit(999,Game.player,true)
-	check(Game.quest_step==4,"Defeating the camp unlocks ledger objective")
+	check(Game.quest_step==4 and Game.camp_cleared(),"Defeating the captain and all camp guards unlocks the ledger")
+	var victory_coins = Game.coins
+	Game.world.enemies[-1].take_hit(999,Game.player,true)
+	check(Game.coins==victory_coins,"Defeated soldiers and squad rewards cannot be claimed twice")
 	Game.app.interact(find_interaction("ledger"))
 	Game.app.interact(find_interaction("npc","ravi"))
 	check(Game.quest_step==6 and Game.coins>=200,"Ledger and return interactions award reward and ending")

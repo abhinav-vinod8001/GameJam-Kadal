@@ -1,0 +1,767 @@
+{
+  "language": "ml-IN",
+  "lines": {
+    "ravi_intro": {
+      "ml": "നമ്മുടെ വഞ്ചി ഇതുവരെ മടങ്ങിയില്ല. മീരയോട് ചോദിക്കൂ. ചരക്ക് കയറ്റിയവരെ അവൾ കണ്ടിട്ടുണ്ട്.",
+      "en": "Our vanchi has not returned. Ask Meera; she saw the people who loaded the cargo.",
+      "pitch": 0.94
+    },
+    "ravi_more": {
+      "ml": "മഴ കനക്കുന്നതിനു മുമ്പ് തിരിച്ചു വരണം. വഞ്ചി എടുത്തോളൂ. കിഴക്കേ കരയിൽ ശ്രദ്ധിക്കണം.",
+      "en": "Come back before the rain grows heavy. Take the boat, and watch the eastern bank.",
+      "pitch": 0.94
+    },
+    "ravi_greet": {
+      "ml": "അരുണേ, ഇങ്ങോട്ടു വരൂ. കടവിൽ നിന്നൊരു വാർത്തയുണ്ട്.",
+      "en": "Arun, come here. There is news from the jetty.",
+      "pitch": 0.94
+    },
+    "ravi_local": {
+      "ml": "കായലിലെ ഒഴുക്ക് ഇന്ന് ശക്തമാണ്. വഞ്ചി സൂക്ഷിച്ച് തുഴയണം.",
+      "en": "The backwater current is strong today. Paddle carefully.",
+      "pitch": 0.94
+    },
+    "meera_intro": {
+      "ml": "വരൂ! കുരുമുളകും ഏലക്കയും ഉണ്ട്. കാണാതായ വഞ്ചിയാണോ? വടക്കേ വളവിൽ ചിലർ ചുവന്ന പായ ഇറക്കുന്നത് കണ്ടു.",
+      "en": "Welcome! Pepper and cardamom for sale. The missing boat? I saw men unload a red sail at the northern bend.",
+      "pitch": 1.02
+    },
+    "meera_more": {
+      "ml": "കായലിന്റെ വളവിൽ കീറിയ ചുവന്ന പായയുണ്ട്. ആ ആളുകളെ കണ്ടപ്പോൾ സംശയം തോന്നി. ചെന്നു നോക്കൂ.",
+      "en": "There is a torn red sail at the bend. Those men looked suspicious. Go and investigate.",
+      "pitch": 1.02
+    },
+    "meera_greet": {
+      "ml": "അരുണേ, വരൂ! യാത്രയ്ക്ക് ഔഷധം വേണമോ?",
+      "en": "Arun, welcome! Do you need healing herbs for your journey?",
+      "pitch": 1.02
+    },
+    "meera_local": {
+      "ml": "ഈ ഏലക്കയുടെ മണം നോക്കൂ. മലയിൽ നിന്നു കൊണ്ടുവന്നതാണ്.",
+      "en": "Smell this cardamom. It came down from the hills.",
+      "pitch": 1.02
+    },
+    "amma_intro": {
+      "ml": "ഈ നാടിന് ഒരുപാട് കഥകൾ പറയാനുണ്ട്, മോനേ. കാറ്റില്ലാതെയും മലമുകളിലെ ക്ഷേത്രമണി മുഴങ്ങാറുണ്ട്.",
+      "en": "This land has many stories, child. The hill temple bell sometimes rings without a breeze.",
+      "pitch": 1.02
+    },
+    "amma_more": {
+      "ml": "കാട്ടിലൂടെ പോകുമ്പോൾ വഴി തെറ്റരുത്. കല്ലുവിളക്കുകൾ നോക്കി നടന്നാൽ കളരിയിലെത്താം.",
+      "en": "Do not lose your way in the forest. Follow the stone lamps to reach the kalari.",
+      "pitch": 1.02
+    },
+    "amma_greet": {
+      "ml": "മോനേ, ഒന്നു നിന്നേ. യാത്രയ്ക്ക് മുമ്പ് വിശ്രമിക്കൂ.",
+      "en": "Child, wait a moment. Rest before your journey.",
+      "pitch": 1.02
+    },
+    "amma_local": {
+      "ml": "സന്ധ്യയ്ക്കു മുമ്പ് വീട്ടിലെത്തണം. മഴയുടെ മണം വരുന്നുണ്ട്.",
+      "en": "Get home before dusk. I can smell the rain.",
+      "pitch": 1.02
+    },
+    "fish_intro": {
+      "ml": "ഇന്നത്തെ മീനാണ്! നല്ല മത്തിയും അയലയും ഉണ്ട്. നമ്മുടെ ആളുകളെ സുരക്ഷിതമായി തിരിച്ചു കൊണ്ടുവരണം.",
+      "en": "Fresh fish! Sardines and mackerel. Bring our people home safely.",
+      "pitch": 1.02
+    },
+    "fish_more": {
+      "ml": "കടവിൽ രവിയെ കണ്ടോ? ഈ കായലിനെ അവനോളം അറിയുന്നവർ കുറവാണ്.",
+      "en": "Have you met Ravi at the jetty? Few people know these waters as well as he does.",
+      "pitch": 1.02
+    },
+    "fish_greet": {
+      "ml": "വരൂ, വരൂ! ഇന്നത്തെ പിടിത്തം കണ്ടിട്ടു പോകൂ!",
+      "en": "Come, come! Have a look at today’s catch!",
+      "pitch": 1.02
+    },
+    "fish_local": {
+      "ml": "വഞ്ചികൾ മടങ്ങിവരാൻ സമയമായി. കടവിലേക്ക് ഒന്നു നോക്കണേ.",
+      "en": "It is time for the boats to return. Keep an eye on the jetty.",
+      "pitch": 1.02
+    },
+    "guru_intro": {
+      "ml": "ആദ്യം ചുവട് ഉറപ്പിക്കണം. പിന്നെയാണ് ആയുധം. അടി എത്തുന്നതിനു തൊട്ടുമുമ്പ് തടഞ്ഞാൽ തിരിച്ചടിക്കാൻ അവസരം കിട്ടും.",
+      "en": "First find your footing, then your weapon. Block just before a blow lands to create a chance to counter.",
+      "pitch": 0.94
+    },
+    "guru_more": {
+      "ml": "ശരീരവും മനസ്സും ഒരുപോലെ പരിശീലിക്കണം. അടുത്തുള്ള പരിശീലനത്തൂണിൽ ആയുധങ്ങൾ പരീക്ഷിക്കൂ.",
+      "en": "Train body and mind together. Try your weapons on the practice post beside me.",
+      "pitch": 0.94
+    },
+    "guru_greet": {
+      "ml": "അരുണേ, ചുവട് ശ്രദ്ധിക്കൂ. തുലനം നഷ്ടപ്പെടുത്തരുത്.",
+      "en": "Arun, watch your footing. Keep your balance.",
+      "pitch": 0.94
+    },
+    "guru_local": {
+      "ml": "വേഗം മാത്രം പോരാ. ക്ഷമയും പരിശീലനവും വേണം.",
+      "en": "Speed alone is not enough. You need patience and practice.",
+      "pitch": 0.94
+    },
+    "smith_intro": {
+      "ml": "നല്ല ആയുധത്തിന് നല്ല പരിചരണം വേണം. മീരയുടെ കടയിൽ എന്റെ ഉരകല്ലുണ്ട്. ആയുധത്തിന് മൂർച്ച കൂട്ടിക്കോളൂ.",
+      "en": "A good weapon needs care. Meera sells my whetstones. Have your weapons honed there.",
+      "pitch": 0.94
+    },
+    "smith_more": {
+      "ml": "മഴ കഴിഞ്ഞാൽ വാൾ തുടയ്ക്കണം. തുരുമ്പ് പിടിച്ചാൽ മൂർച്ച പോകും.",
+      "en": "Wipe your sword after the rain. Rust will dull its edge.",
+      "pitch": 0.94
+    },
+    "smith_greet": {
+      "ml": "വാളിന്റെ മൂർച്ച നോക്കട്ടെ, അരുണേ. യാത്രയ്ക്ക് തയ്യാറാണോ?",
+      "en": "Let me check your blade, Arun. Ready for the road?",
+      "pitch": 0.94
+    },
+    "smith_local": {
+      "ml": "നല്ല ഉരുക്കാണ്. ശരിയായി നോക്കിയാൽ ഏറെക്കാലം നിലനിൽക്കും.",
+      "en": "Good steel. Look after it and it will last for years.",
+      "pitch": 0.94
+    },
+    "life_leela_intro": {
+      "ml": "പഴുത്ത മാങ്ങയുണ്ട്, അരുണേ. ഒന്നു രുചിച്ചു നോക്കൂ.",
+      "en": "Ripe mangoes, Arun. Come and taste one.",
+      "pitch": 1.02
+    },
+    "life_leela_more": {
+      "ml": "യാത്രയ്ക്ക് പഴം എടുത്തോളൂ. വഴിയിൽ വിശക്കില്ല.",
+      "en": "Take some fruit for the journey so you will not go hungry.",
+      "pitch": 1.02
+    },
+    "life_leela_greet": {
+      "ml": "ഇന്നലെ പറിച്ച ചക്കയാണ്. നല്ല മധുരമുണ്ട്.",
+      "en": "This jackfruit was picked yesterday. It is lovely and sweet.",
+      "pitch": 1.02
+    },
+    "life_madhavan_intro": {
+      "ml": "പുതിയ മൺകുടങ്ങൾ നോക്കൂ. വെള്ളം നല്ല തണുപ്പോടെ ഇരിക്കും.",
+      "en": "Look at these new clay pots. They keep water cool.",
+      "pitch": 0.94
+    },
+    "life_madhavan_more": {
+      "ml": "ചൂളയിൽ ഇന്നലെ രാത്രി വരെ പണിയുണ്ടായിരുന്നു.",
+      "en": "I worked at the kiln until late last night.",
+      "pitch": 0.94
+    },
+    "life_madhavan_greet": {
+      "ml": "കുടം പതുക്കെ എടുക്കണേ. ഇപ്പോൾ ചൂളയിൽ നിന്ന് ഇറക്കിയതാണ്.",
+      "en": "Lift that pot gently. It has just come out of the kiln.",
+      "pitch": 0.94
+    },
+    "life_safiya_intro": {
+      "ml": "നല്ല പരുത്തിത്തുണിയുണ്ട്. ഈ നിറം നിനക്ക് ചേരും.",
+      "en": "I have fine cotton cloth. This colour would suit you.",
+      "pitch": 1.02
+    },
+    "life_safiya_more": {
+      "ml": "മഴയ്ക്കു മുമ്പ് തുണിയെല്ലാം അകത്തു വയ്ക്കണം.",
+      "en": "I must bring all the cloth inside before it rains.",
+      "pitch": 1.02
+    },
+    "life_safiya_greet": {
+      "ml": "ഒരു മേൽമുണ്ട് വേണമോ? യാത്രയ്ക്ക് ഉപകരിക്കും.",
+      "en": "Would you like a shawl? It will be useful on your journey.",
+      "pitch": 1.02
+    },
+    "life_hameed_intro": {
+      "ml": "കടലിൽ നിന്ന് ഇപ്പോൾ കൊണ്ടുവന്ന മീനാണ്. നോക്കിക്കോളൂ.",
+      "en": "This fish has just come in from the sea. Take a look.",
+      "pitch": 0.94
+    },
+    "life_hameed_more": {
+      "ml": "ഇന്ന് തിരമാല കൂടുതലായിരുന്നു. വഞ്ചിക്കാർ വൈകിയാണ് വന്നത്.",
+      "en": "The waves were high today, so the boatmen came in late.",
+      "pitch": 0.94
+    },
+    "life_hameed_greet": {
+      "ml": "വില ചോദിക്കാൻ മടിക്കണ്ട. നല്ല മീൻ തരാം.",
+      "en": "Do not hesitate to ask the price. I will give you good fish.",
+      "pitch": 0.94
+    },
+    "life_janaki_intro": {
+      "ml": "പുതിയ അരിയുണ്ട്. നമ്മുടെ പാടത്തെ വിളവാണ്.",
+      "en": "Fresh rice, grown in our own paddy fields.",
+      "pitch": 1.02
+    },
+    "life_janaki_more": {
+      "ml": "ഈ വർഷം വിളവ് നന്നായാൽ എല്ലാവർക്കും ആശ്വാസമാകും.",
+      "en": "A good harvest this year would be a relief for everyone.",
+      "pitch": 1.02
+    },
+    "life_janaki_greet": {
+      "ml": "ഒരു നാഴി അരി വേണമോ? അളന്നു തരാം.",
+      "en": "Would you like a measure of rice? I will weigh it for you.",
+      "pitch": 1.02
+    },
+    "life_mani_intro": {
+      "ml": "വെണ്ടയ്ക്കയും പാവയ്ക്കയും ഉണ്ട്. ഇന്നേ പറിച്ചതാണ്.",
+      "en": "Okra and bitter gourd, picked just today.",
+      "pitch": 0.94
+    },
+    "life_mani_more": {
+      "ml": "പച്ചക്കറിത്തോട്ടത്തിന് ഈ മഴ നല്ലതാണ്.",
+      "en": "This rain is good for the vegetable garden.",
+      "pitch": 0.94
+    },
+    "life_mani_greet": {
+      "ml": "വരൂ! വീട്ടിലേക്കുള്ള പച്ചക്കറി എടുത്തോളൂ.",
+      "en": "Come! Get some vegetables to take home.",
+      "pitch": 0.94
+    },
+    "life_radha_intro": {
+      "ml": "മുല്ലപ്പൂ വേണമോ? നല്ല മണമുണ്ട്.",
+      "en": "Would you like jasmine? It smells wonderful.",
+      "pitch": 1.02
+    },
+    "life_radha_more": {
+      "ml": "മലമുകളിലെ ക്ഷേത്രത്തിലേക്കും പൂ കൊണ്ടുപോകാറുണ്ട്.",
+      "en": "I take flowers to the hill temple too.",
+      "pitch": 1.02
+    },
+    "life_radha_greet": {
+      "ml": "ഈ പൂമാല രാവിലെ തന്നെ കോർത്തതാണ്.",
+      "en": "I strung this garland early this morning.",
+      "pitch": 1.02
+    },
+    "life_soman_intro": {
+      "ml": "കരിക്കിൻ വെള്ളം കുടിച്ചിട്ടു പോകൂ. ക്ഷീണം മാറും.",
+      "en": "Have some tender coconut water before you go. It will refresh you.",
+      "pitch": 0.94
+    },
+    "life_soman_more": {
+      "ml": "തെങ്ങിൽ കയറാൻ നല്ല പരിചയം വേണം.",
+      "en": "It takes practice to climb a coconut tree.",
+      "pitch": 0.94
+    },
+    "life_soman_greet": {
+      "ml": "ഈ കരിക്ക് നല്ല മധുരമാണ്. ഒന്നു നോക്കൂ.",
+      "en": "This tender coconut is sweet. Give it a try.",
+      "pitch": 0.94
+    },
+    "life_balan_intro": {
+      "ml": "വരമ്പിലൂടെ നടന്നോളൂ. ഞാറ് ചവിട്ടരുതേ.",
+      "en": "Walk along the bund. Please do not tread on the seedlings.",
+      "pitch": 0.94
+    },
+    "life_balan_more": {
+      "ml": "തോടിലെ വെള്ളം തിരിച്ചുവിട്ടാൽ പാടം മുഴുവൻ നനയും.",
+      "en": "Divert the stream and the whole field will be watered.",
+      "pitch": 0.94
+    },
+    "life_balan_greet": {
+      "ml": "ഈ മഴ കഴിഞ്ഞാൽ പാടം പച്ചപ്പാകും.",
+      "en": "The fields will turn green after this rain.",
+      "pitch": 0.94
+    },
+    "life_parvathi_intro": {
+      "ml": "ഞാറ് നടുകയാണ്. വരമ്പിൽ നിന്നു നോക്കിക്കോളൂ.",
+      "en": "We are planting rice. You can watch from the bund.",
+      "pitch": 1.02
+    },
+    "life_parvathi_more": {
+      "ml": "ഓരോ തൈക്കും ഇടം വേണം. അപ്പോഴാണ് നന്നായി വളരുക.",
+      "en": "Every seedling needs space. That is how it grows well.",
+      "pitch": 1.02
+    },
+    "life_parvathi_greet": {
+      "ml": "ഇന്ന് ഈ വരിയെങ്കിലും നട്ടുതീർക്കണം.",
+      "en": "We must finish planting at least this row today.",
+      "pitch": 1.02
+    },
+    "life_appu_intro": {
+      "ml": "വെള്ളം തുറന്നുവിടാൻ സഹായിക്കാമോ? പാടം വരണ്ടുപോകുന്നു.",
+      "en": "Could you help open the sluice? The field is drying out.",
+      "pitch": 0.94
+    },
+    "life_appu_more": {
+      "ml": "വൈകുന്നേരം വരെ ഇവിടെ പണിയുണ്ട്.",
+      "en": "We have work here until evening.",
+      "pitch": 0.94
+    },
+    "life_appu_greet": {
+      "ml": "ചെളിയിൽ വഴുക്കും, അരുണേ. പതുക്കെ നടക്കൂ.",
+      "en": "The mud is slippery, Arun. Walk slowly.",
+      "pitch": 0.94
+    },
+    "life_sreedevi_intro": {
+      "ml": "കൊയ്ത നെല്ല് കളപ്പുരയിൽ എത്തിക്കണം. ഒന്നു വഴിതരൂ.",
+      "en": "I must get this harvested rice to the granary. Make some room, please.",
+      "pitch": 1.02
+    },
+    "life_sreedevi_more": {
+      "ml": "മഴയ്ക്കു മുമ്പ് കറ്റയെല്ലാം അകത്തെത്തണം.",
+      "en": "All the sheaves must be inside before the rain.",
+      "pitch": 1.02
+    },
+    "life_sreedevi_greet": {
+      "ml": "ഈ കറ്റയ്ക്ക് നല്ല ഭാരമുണ്ട്. കുറച്ചുനേരം വിശ്രമിക്കട്ടെ.",
+      "en": "This bundle is heavy. Let me rest for a moment.",
+      "pitch": 1.02
+    },
+    "life_chandran_intro": {
+      "ml": "ഈ ചുമട് കടവിലെത്തിക്കണം. വഴി ഒന്നു മാറാമോ?",
+      "en": "I must carry this load to the jetty. Could you make way?",
+      "pitch": 0.94
+    },
+    "life_chandran_more": {
+      "ml": "കാണാതായ വഞ്ചിയിൽ എന്റെ കൂട്ടുകാരനുമുണ്ട്.",
+      "en": "One of my friends was on the missing boat.",
+      "pitch": 0.94
+    },
+    "life_chandran_greet": {
+      "ml": "ചന്തയിൽ ഇന്ന് ചുമടെടുക്കാൻ ആളു കുറവാണ്.",
+      "en": "There are few porters working at the market today.",
+      "pitch": 0.94
+    },
+    "life_nabeesa_intro": {
+      "ml": "അരുണേ, മീരയുടെ കട എവിടെയാണ്? ഔഷധം വാങ്ങാനുണ്ട്.",
+      "en": "Arun, where is Meera’s stall? I need healing herbs.",
+      "pitch": 1.02
+    },
+    "life_nabeesa_more": {
+      "ml": "ചന്തയിലെ തിരക്ക് കണ്ടോ? മഴയ്ക്കു മുമ്പുള്ള വാങ്ങലാണ്.",
+      "en": "Have you seen the crowd? Everyone is shopping before the rain.",
+      "pitch": 1.02
+    },
+    "life_nabeesa_greet": {
+      "ml": "വീട്ടിലേക്കുള്ള സാധനങ്ങളെല്ലാം വാങ്ങി. ഇനി മടങ്ങണം.",
+      "en": "I have bought everything for home. Time to head back.",
+      "pitch": 1.02
+    },
+    "life_krishnan_intro": {
+      "ml": "പുതിയ മുളങ്കൂട വേണമോ? ഉറപ്പുള്ള പണിയാണ്.",
+      "en": "Would you like a new bamboo basket? It is well made.",
+      "pitch": 0.94
+    },
+    "life_krishnan_more": {
+      "ml": "ഈ കൂട മെടയാൻ ഒരു ദിവസം മുഴുവൻ വേണം.",
+      "en": "It takes a whole day to weave this basket.",
+      "pitch": 0.94
+    },
+    "life_krishnan_greet": {
+      "ml": "മീൻ കൊണ്ടുപോകാനും നെല്ലെടുക്കാനും ഈ കൂട മതി.",
+      "en": "This basket works for carrying fish or rice.",
+      "pitch": 0.94
+    },
+    "life_velu_intro": {
+      "ml": "വല കീറിയിരിക്കുകയാണ്. തുന്നിത്തീർത്തിട്ട് കടലിൽ പോകണം.",
+      "en": "The net is torn. I must mend it before going to sea.",
+      "pitch": 0.94
+    },
+    "life_velu_more": {
+      "ml": "കായലിലെ വളവിൽ ചില അന്യരെ കണ്ടിരുന്നു.",
+      "en": "I saw some strangers near the bend in the backwater.",
+      "pitch": 0.94
+    },
+    "life_velu_greet": {
+      "ml": "വലയിലെ കുരുക്ക് അഴിച്ചാൽ പകുതി പണി തീർന്നു.",
+      "en": "Once the knots are untangled, half the work is done.",
+      "pitch": 0.94
+    },
+    "life_joseph_intro": {
+      "ml": "ഇന്ന് കാറ്റ് മാറുന്നുണ്ട്. കടലിൽ പോകുമ്പോൾ സൂക്ഷിക്കണം.",
+      "en": "The wind is shifting today. Take care if you go to sea.",
+      "pitch": 0.94
+    },
+    "life_joseph_more": {
+      "ml": "വഞ്ചി കാണാതായതിൽ എല്ലാവർക്കും വിഷമമുണ്ട്.",
+      "en": "Everyone is worried about the missing boat.",
+      "pitch": 0.94
+    },
+    "life_joseph_greet": {
+      "ml": "ഇന്ന് വലയിൽ അധികം മീനില്ല. നാളെ നന്നാകട്ടെ.",
+      "en": "There is not much fish in the net today. May tomorrow be better.",
+      "pitch": 0.94
+    },
+    "life_lakshmi_intro": {
+      "ml": "അരുണേ, വീട്ടിൽ എല്ലാവർക്കും സുഖമാണോ?",
+      "en": "Arun, is everyone well at home?",
+      "pitch": 1.02
+    },
+    "life_lakshmi_more": {
+      "ml": "ദേവകിയമ്മ പറഞ്ഞ കഥ കേട്ടോ? ക്ഷേത്രമണിയെപ്പറ്റിയാണ്.",
+      "en": "Did you hear Devaki Amma’s story about the temple bell?",
+      "pitch": 1.02
+    },
+    "life_lakshmi_greet": {
+      "ml": "തിരിച്ചു വരുമ്പോൾ ഇവിടേക്ക് വരണേ. കുറച്ചു സംസാരിക്കാം.",
+      "en": "Come by when you return. We can have a chat.",
+      "pitch": 1.02
+    },
+    "life_raman_intro": {
+      "ml": "ഈ ആൽമരത്തോളം പഴക്കമുണ്ട് നമ്മുടെ ചില കഥകൾക്ക്.",
+      "en": "Some of our stories are as old as this banyan tree.",
+      "pitch": 0.94
+    },
+    "life_raman_more": {
+      "ml": "നാടിനെ കാക്കാൻ ധൈര്യം മാത്രം പോരാ. വിവേകവും വേണം.",
+      "en": "It takes wisdom as well as courage to protect the village.",
+      "pitch": 0.94
+    },
+    "life_raman_greet": {
+      "ml": "മഴ വന്നാലും നാട്ടുകാർ ഒത്തുനിന്നാൽ പേടിക്കാനില്ല.",
+      "en": "Even when the rain comes, there is nothing to fear if we stand together.",
+      "pitch": 0.94
+    },
+    "life_unni_intro": {
+      "ml": "ഇന്നത്തെ പരിശീലനം കഴിഞ്ഞോ? ഞാൻ ചുവട് പഠിക്കുകയാണ്.",
+      "en": "Finished training today? I am learning the footwork.",
+      "pitch": 0.94
+    },
+    "life_unni_more": {
+      "ml": "ഗുരുക്കൾ പറഞ്ഞതുപോലെ ശ്വാസം ക്രമപ്പെടുത്തണം.",
+      "en": "We must steady our breathing, just as the instructor said.",
+      "pitch": 0.94
+    },
+    "life_unni_greet": {
+      "ml": "കുന്തം പിടിക്കുമ്പോൾ അകലം ശ്രദ്ധിക്കണം.",
+      "en": "Watch your distance when you hold a spear.",
+      "pitch": 0.94
+    },
+    "life_gopi_intro": {
+      "ml": "അരുണേ, നിന്റെ വാൾപ്പയറ്റ് ഒന്നു കാണിച്ചു തരാമോ?",
+      "en": "Arun, could you show me some swordplay?",
+      "pitch": 0.94
+    },
+    "life_gopi_more": {
+      "ml": "പരിച ഉയർത്താൻ വൈകിയാൽ അടി കിട്ടും.",
+      "en": "Raise your shield too late and the blow will land.",
+      "pitch": 0.94
+    },
+    "life_gopi_greet": {
+      "ml": "നാളെ രാവിലെ കളരിയിൽ നേരത്തെ വരണം.",
+      "en": "We should come to the kalari early tomorrow.",
+      "pitch": 0.94
+    },
+    "life_kumaran_intro": {
+      "ml": "മലയിലേക്കാണോ? കല്ലുപടിയിൽ വഴുക്കലുണ്ട്.",
+      "en": "Going up the hill? The stone steps are slippery.",
+      "pitch": 0.94
+    },
+    "life_kumaran_more": {
+      "ml": "ക്ഷേത്രമുറ്റത്ത് വിശ്രമിക്കാം. അവിടെ നല്ല കാറ്റുണ്ട്.",
+      "en": "You can rest in the temple courtyard. There is a fine breeze there.",
+      "pitch": 0.94
+    },
+    "life_kumaran_greet": {
+      "ml": "മലമുകളിൽ നിന്നാൽ കായൽ മുഴുവൻ കാണാം.",
+      "en": "From the hilltop you can see the whole backwater.",
+      "pitch": 0.94
+    },
+    "life_narayanan_intro": {
+      "ml": "കാട്ടിൽ മുന്നോട്ട് പോകുമ്പോൾ സൂക്ഷിക്കണം. പടയാളികൾ നിൽപ്പുണ്ട്.",
+      "en": "Be careful further into the forest. There are soldiers ahead.",
+      "pitch": 0.94
+    },
+    "life_narayanan_more": {
+      "ml": "വിറക് പെറുക്കാൻ വന്നതാണ്. ഇന്നു നേരത്തെ മടങ്ങണം.",
+      "en": "I came to gather firewood. I must head back early today.",
+      "pitch": 0.94
+    },
+    "life_narayanan_greet": {
+      "ml": "വഴിവിട്ട് കാട്ടിലേക്ക് ഇറങ്ങരുത്. ആനകളുണ്ടാകാം.",
+      "en": "Do not stray off the forest trail. There may be elephants.",
+      "pitch": 0.94
+    },
+    "life_mary_intro": {
+      "ml": "നമസ്കാരം, അരുണേ. കടവിലേക്ക് പോകുകയാണോ?",
+      "en": "Hello, Arun. Are you going to the jetty?",
+      "pitch": 1.02
+    },
+    "life_mary_more": {
+      "ml": "മഴയ്ക്കു മുമ്പ് അയൽവീട്ടിൽ ഒന്നു കയറണം.",
+      "en": "I must visit the neighbours before the rain.",
+      "pitch": 1.02
+    },
+    "life_mary_greet": {
+      "ml": "ഒരുപാട് ദൂരം നടന്നോ? കുറച്ചു വെള്ളം കുടിക്കൂ.",
+      "en": "Have you walked far? Have a little water.",
+      "pitch": 1.02
+    },
+    "soldier_alert_1": {
+      "ml": "അവിടെ നിൽക്ക്! ആരാണ് നീ?",
+      "en": "Stop there! Who are you?",
+      "pitch": 0.86
+    },
+    "soldier_alert_2": {
+      "ml": "ഇങ്ങോട്ടു വരരുത്! തിരിച്ചു പോ!",
+      "en": "Do not come closer! Turn back!",
+      "pitch": 0.86
+    },
+    "soldier_alert_3": {
+      "ml": "കാവൽക്കാരേ, ഒരാൾ വരുന്നുണ്ട്!",
+      "en": "Guards, someone is coming!",
+      "pitch": 0.86
+    },
+    "soldier_combat_1": {
+      "ml": "ഒരുമിച്ച് മുന്നേറൂ! അവനെ വളയൂ!",
+      "en": "Advance together! Surround him!",
+      "pitch": 0.86
+    },
+    "soldier_combat_2": {
+      "ml": "വഴി അടയ്ക്കൂ! രക്ഷപ്പെടാൻ വിടരുത്!",
+      "en": "Block the path! Do not let him escape!",
+      "pitch": 0.86
+    },
+    "soldier_combat_3": {
+      "ml": "പരിച ഉയർത്തൂ! സൂക്ഷിച്ചു നീങ്ങൂ!",
+      "en": "Shields up! Move carefully!",
+      "pitch": 0.86
+    },
+    "soldier_combat_4": {
+      "ml": "പിന്നിൽ നിന്ന് വരൂ! ഇടവഴി കാക്കൂ!",
+      "en": "Come from behind! Guard the passage!",
+      "pitch": 0.86
+    },
+    "soldier_captain_1": {
+      "ml": "എന്റെ കാവൽ കടന്ന് ആരും പോകില്ല!",
+      "en": "No one gets past my guard!",
+      "pitch": 0.86
+    },
+    "soldier_captain_2": {
+      "ml": "എല്ലാവരും മുന്നോട്ട്! ഒരുമിച്ച് ആക്രമിക്കൂ!",
+      "en": "Everyone forward! Attack together!",
+      "pitch": 0.86
+    },
+    "soldier_captain_3": {
+      "ml": "ആ കണക്ക് പുസ്തകത്തിൽ കൈവയ്ക്കരുത്!",
+      "en": "Keep your hands off that ledger!",
+      "pitch": 0.86
+    },
+    "soldier_return_1": {
+      "ml": "കാവലിലേക്ക് മടങ്ങൂ! കണ്ണു തുറന്നിരിക്കണം!",
+      "en": "Back to your posts! Keep your eyes open!",
+      "pitch": 0.86
+    },
+    "soldier_return_2": {
+      "ml": "അവൻ വീണ്ടും വരാം. ജാഗ്രത വേണം!",
+      "en": "He may return. Stay alert!",
+      "pitch": 0.86
+    },
+    "weather_rain_1": {
+      "ml": "മഴ കനക്കുന്നു. ഒരു മേൽക്കൂരയുടെ കീഴിൽ നിൽക്കൂ.",
+      "en": "The rain is getting heavier. Find a roof to shelter under.",
+      "pitch": 0.98
+    },
+    "weather_rain_2": {
+      "ml": "വഴിയിൽ വെള്ളം കെട്ടിയിട്ടുണ്ട്. സൂക്ഷിച്ചു നടക്കൂ.",
+      "en": "Water is gathering on the path. Walk carefully.",
+      "pitch": 0.98
+    },
+    "weather_storm_1": {
+      "ml": "ഇടിമിന്നലുണ്ട്! വലിയ മരത്തിന്റെ കീഴിൽ നിൽക്കരുത്.",
+      "en": "There is lightning! Do not stand under a tall tree.",
+      "pitch": 0.98
+    },
+    "weather_storm_2": {
+      "ml": "കൊടുങ്കാറ്റ് വരുന്നു. കടവിൽ നിന്ന് മാറിനിൽക്കൂ.",
+      "en": "A storm is coming. Stay away from the jetty.",
+      "pitch": 0.98
+    },
+    "quest_ravi_return_1": {
+      "ml": "അരുണേ, കണക്ക് പുസ്തകം കിട്ടിയോ? ഇങ്ങോട്ടു വരൂ!",
+      "en": "Arun, you found the ledger? Come here!",
+      "pitch": 0.98
+    },
+    "quest_victory_1": {
+      "ml": "നമ്മുടെ ആളുകൾ തിരിച്ചെത്തി! നിനക്ക് നന്ദി, അരുണേ.",
+      "en": "Our people are home! Thank you, Arun.",
+      "pitch": 0.98
+    }
+  },
+  "pools": {
+    "ravi": [
+      "ravi_intro",
+      "ravi_more",
+      "ravi_greet",
+      "ravi_local"
+    ],
+    "meera": [
+      "meera_intro",
+      "meera_more",
+      "meera_greet",
+      "meera_local"
+    ],
+    "amma": [
+      "amma_intro",
+      "amma_more",
+      "amma_greet",
+      "amma_local"
+    ],
+    "fish": [
+      "fish_intro",
+      "fish_more",
+      "fish_greet",
+      "fish_local"
+    ],
+    "guru": [
+      "guru_intro",
+      "guru_more",
+      "guru_greet",
+      "guru_local"
+    ],
+    "smith": [
+      "smith_intro",
+      "smith_more",
+      "smith_greet",
+      "smith_local"
+    ],
+    "life_leela": [
+      "life_leela_intro",
+      "life_leela_more",
+      "life_leela_greet"
+    ],
+    "life_madhavan": [
+      "life_madhavan_intro",
+      "life_madhavan_more",
+      "life_madhavan_greet"
+    ],
+    "life_safiya": [
+      "life_safiya_intro",
+      "life_safiya_more",
+      "life_safiya_greet"
+    ],
+    "life_hameed": [
+      "life_hameed_intro",
+      "life_hameed_more",
+      "life_hameed_greet"
+    ],
+    "life_janaki": [
+      "life_janaki_intro",
+      "life_janaki_more",
+      "life_janaki_greet"
+    ],
+    "life_mani": [
+      "life_mani_intro",
+      "life_mani_more",
+      "life_mani_greet"
+    ],
+    "life_radha": [
+      "life_radha_intro",
+      "life_radha_more",
+      "life_radha_greet"
+    ],
+    "life_soman": [
+      "life_soman_intro",
+      "life_soman_more",
+      "life_soman_greet"
+    ],
+    "life_balan": [
+      "life_balan_intro",
+      "life_balan_more",
+      "life_balan_greet"
+    ],
+    "life_parvathi": [
+      "life_parvathi_intro",
+      "life_parvathi_more",
+      "life_parvathi_greet"
+    ],
+    "life_appu": [
+      "life_appu_intro",
+      "life_appu_more",
+      "life_appu_greet"
+    ],
+    "life_sreedevi": [
+      "life_sreedevi_intro",
+      "life_sreedevi_more",
+      "life_sreedevi_greet"
+    ],
+    "life_chandran": [
+      "life_chandran_intro",
+      "life_chandran_more",
+      "life_chandran_greet"
+    ],
+    "life_nabeesa": [
+      "life_nabeesa_intro",
+      "life_nabeesa_more",
+      "life_nabeesa_greet"
+    ],
+    "life_krishnan": [
+      "life_krishnan_intro",
+      "life_krishnan_more",
+      "life_krishnan_greet"
+    ],
+    "life_velu": [
+      "life_velu_intro",
+      "life_velu_more",
+      "life_velu_greet"
+    ],
+    "life_joseph": [
+      "life_joseph_intro",
+      "life_joseph_more",
+      "life_joseph_greet"
+    ],
+    "life_lakshmi": [
+      "life_lakshmi_intro",
+      "life_lakshmi_more",
+      "life_lakshmi_greet"
+    ],
+    "life_raman": [
+      "life_raman_intro",
+      "life_raman_more",
+      "life_raman_greet"
+    ],
+    "life_unni": [
+      "life_unni_intro",
+      "life_unni_more",
+      "life_unni_greet"
+    ],
+    "life_gopi": [
+      "life_gopi_intro",
+      "life_gopi_more",
+      "life_gopi_greet"
+    ],
+    "life_kumaran": [
+      "life_kumaran_intro",
+      "life_kumaran_more",
+      "life_kumaran_greet"
+    ],
+    "life_narayanan": [
+      "life_narayanan_intro",
+      "life_narayanan_more",
+      "life_narayanan_greet"
+    ],
+    "life_mary": [
+      "life_mary_intro",
+      "life_mary_more",
+      "life_mary_greet"
+    ],
+    "soldier_alert": [
+      "soldier_alert_1",
+      "soldier_alert_2",
+      "soldier_alert_3"
+    ],
+    "soldier_combat": [
+      "soldier_combat_1",
+      "soldier_combat_2",
+      "soldier_combat_3",
+      "soldier_combat_4"
+    ],
+    "soldier_captain": [
+      "soldier_captain_1",
+      "soldier_captain_2",
+      "soldier_captain_3"
+    ],
+    "soldier_return": [
+      "soldier_return_1",
+      "soldier_return_2"
+    ],
+    "weather_rain": [
+      "weather_rain_1",
+      "weather_rain_2"
+    ],
+    "weather_storm": [
+      "weather_storm_1",
+      "weather_storm_2"
+    ],
+    "quest_ravi_return": [
+      "quest_ravi_return_1"
+    ],
+    "quest_victory": [
+      "quest_victory_1"
+    ]
+  }
+}
